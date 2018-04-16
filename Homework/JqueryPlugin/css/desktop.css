@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Grand+Hotel');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Satisfy');
+
 
 h2{
     margin: 0;
     display: block;
     font-size: 10vmin;
-    font-family: 'Grand Hotel', cursive;
-    text-transform: sentence;
-    font-weight: lighter;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 600;
     color: white;
 }
 
@@ -15,7 +15,8 @@ h2{
     padding-bottom: 0 !important;
     background-image: url("../Images/nowords.png");
     background-size: auto 100%;
-    background-position: right right;
+    /* background-position: right center; */
+    background-position: left top;
     background-repeat: no-repeat;
 }
 
@@ -36,46 +37,56 @@ h2{
 }
 
 #title h1{
-    font-size: 8vmin;
+    font-size: 12vmin;
     padding-left: 1%;
     padding-right: 1%;
+    font-family: 'Satisfy', cursive;
+    font-weight: normal;
+    margin-bottom: 1%;
+    text-align: center;
+    text-decoration: underline;
 }
 
 #title p{
-    font-size: 3vmin;
+    font-size: 4vmin;
     text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    margin:0;
 }
 
 
-#sydney .fp-slides{
-    display: inline-block;
-    width: 1;
-}
+
 
 #sydney h2{
     display: block;
     font-size: 10vmin;
-    font-family: 'Grand Hotel', cursive;
-    text-transform: sentence;
-    font-weight: lighter;
     color: white;
-    text-transform: sentence;
 }
 
-#lFlagUp {
+.lFlagUp {
     display: inline-block;
     position: absolute;
     width: auto !important;
-    height: auto;
+    height: auto !important;
     margin-top: 3%;
     background-color: rgba(132, 132, 132, .4);
     padding-left: 3%;
     padding-right: 3%;
-    z-index: 999;
-    right: 0;
+    left: 0;
     top: 0;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
 }
 
+
+#sydney .lFlagUp{
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    margin-top: 3%;
+    z-index: 998;
+}
 
 .lnk a{
     margin-bottom: 0;
@@ -83,13 +94,36 @@ h2{
     text-decoration: none;
 }
 
-#syd{
+
+.lnk a:hover{
+    font-style: italic;
+    color:rgb(204, 190, 232);
+}
+
+
+.fp-slide{
+    position: relative;
+}
+
+#sydney .rFlagB{
+    position: absolute;
+    display: inline-block;
+    z-index: 997;
+    bottom: 0;
+    margin-bottom: 3%;
+    right: 0;
+}
+
+
+
+#city{
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/5c/Sydney_skyline_at_dusk_-_Dec_2008.jpg");
     /* By Diliff [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0) or GFDL (http://www.gnu.org/copyleft/fdl.html)], from Wikimedia Commons */
     background-size: auto 100%;
     background-position: center bottom;
     background-repeat: no-repeat;
 }
+
 
 #opera{
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6f/Sydney_Opera_House_%286409684029%29.jpg");
@@ -132,8 +166,6 @@ h2{
 #cairns h2{
     display: block;
     font-size: 10vmin;
-    font-family: 'Grand Hotel', cursive;
-    font-weight: lighter;
     margin: 0;
 }
 
@@ -158,9 +190,11 @@ h2{
     background-color: rgba(132, 132, 132, .4);
     padding-left: 3%;
     padding-right: 3%;
-    z-index: 999;
+    z-index: 996;
     right: 0;
     bottom: 0;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
 }
 
 
@@ -176,16 +210,12 @@ h2{
 }
 
 #aliceSprings h2{
-    display: block;
+    display: inline-block;
     font-size: 10vmin;
-    font-family: 'Grand Hotel', cursive;
-    text-transform: sentence;
-    font-weight: lighter;
     color: white;
-    text-transform: sentence;
 }
 
-#rFlagUp {
+.rFlagUp {
     display: inline-block;
     position: absolute;
     width: auto !important;
@@ -194,9 +224,11 @@ h2{
     background-color: rgba(132, 132, 132, .4);
     padding-left: 3%;
     padding-right: 3%;
-    z-index: 999;
+    z-index: 997;
     right: 0;
     top: 0;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
 }
 
 #u a{
@@ -208,7 +240,7 @@ h2{
 #u a:hover{
     margin-bottom: 0;
     font-style: italic;
-    color: green;
+    color: rgb(232, 206, 164);
 }
 
 
@@ -228,23 +260,7 @@ h2{
 #kangIsland h2{
     display: block;
     font-size: 10vmin;
-    font-family: 'Grand Hotel', cursive;
-    text-transform: sentence;
-    font-weight: lighter;
     color: white;
-}
-.lFlagUp {
-    display: inline-block;
-    position: absolute;
-    width: auto !important;
-    height: 7em;
-    margin-top: 3%;
-    background-color: rgba(132, 132, 132, .4);
-    padding-left: 3%;
-    padding-right: 3%;
-    z-index: 999;
-    left: 0;
-    top: 0;
 }
 
 #n a{

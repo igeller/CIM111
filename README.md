@@ -25,5 +25,3 @@ In Class Work:
 -------------------------------------------------------------------
 
 [Homework](https://igeller.github.io/CIM111/Homework/)
-
-did it work

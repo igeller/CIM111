@@ -19,8 +19,6 @@ possible plugins:
 
 
 
-
-
 Choose and implement a jQuery plugin. Create a one page site about a place you would like to visit.
 You must apply the plugin on a minimum of 5 Elements or areas on your site.
 
@@ -140,86 +138,73 @@ Making your site presentable
 
 
 <!DOCTYPE html>
-<html>
 <html lang="en" dir="ltr">
-<head>
-    <title>Get Down Under</title>
+    <head>
+        <title>Get Down Under</title>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- fullPage -->
+        <script type="text/javascript" src="js/fullpage/scrolloverflow.min.js"></script>
+        <script type="text/javascript" src="js/fullpage/jquery.fullpage.js"></script>
+        <script type="text/javaScript" src="javaScript/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="js/fullpage/jquery.fullPage.css" />
 
 
+        <link rel="stylesheet" type="text/css" href="css/desktop.css" />
 
-    <!-- fullPage -->
-    <script type="text/javascript" src="js/fullpage/scrolloverflow.min.js"></script>
-    <script type="text/javascript" src="js/fullpage/jquery.fullpage.js"></script>
-    <script type="text/javaScript" src="javaScript/script.js"></script>
-    <link rel="stylesheet" type="text/css" href="js/fullpage/jquery.fullPage.css" />
-
-
-    <link rel="stylesheet" type="text/css" href="css/desktop.css" />
-
-</head>
+    </head>
 
 
 
 
-<body>
+    <body>
 
-    <header>
-    </header>
-
+        <header></header>
 
 
-    <main>
-        <div id="fullPage">
-            <div class="section" id="home" data-anchor="one">
-                            <!-- <img src="Images/nowords.png" alt=""> -->
-                            <div id="title">
-                                <h1>Australia</h1>
-                                <p>The Australian landscape is painted with a blend of vivid colours,
-                                    from the cool coastal blues, to the outback’s warm auburn hues,
-                                    the country is a vibrant playground. Admire the magnificence
-                                    of the colourful land and explore the unique nature experiences
-                                    these destinations have to offer.</p>
-                        </div>
-            </div>
+        <main>
+            <div id="fullPage">
+                <div class="section active" id="home" data-anchor="one">
+                    <div id="title">
+                        <h1>Australia</h1>
+                        <p>The Australian landscape is painted with a blend of vivid colours,
+                            from the cool coastal blues, to the outback’s warm auburn hues,
+                            the country is a vibrant playground. Admire the magnificence
+                            of the colourful land and explore the unique nature experiences
+                            these destinations have to offer. (Click location names to find out more)</p>
+                    </div>
+                </div>
+
 
                 <div class="section" id="sydney" data-anchor="two">
-                        <div class="slide rFlagB" id="syd" data-anchor="slide1">
-                            <h2 class="lnk"><a href="https://www.australia.com/en/places/sydney-and-surrounds/guide-to-sydney.html">Sydney</a></h2>
+                        <div class="slide active" id="city">
+                            <h2 class="lFlagUp">Find Culture in Sydney</h2>
+                            <h2 class="lnk rFlagB"><a href="https://www.australia.com/en/places/sydney-and-surrounds/guide-to-sydney.html">Sydney</a></h2>
                         </div>
 
-                        <div class="slide rFlagB" id="opera" data-anchor="slide2">
-                            <h2 class="lnk"><a href="https://www.australia.com/en/places/sydney-and-surrounds/guide-to-sydney-harbour.html">Sydney Opera House</a></h2>
+                        <div class="slide" id="opera">
+                            <h2 class="lFlagUp">Find Culture in Sydney</h2>
+                            <h2 class="lnk rFlagB"><a href="https://www.australia.com/en/places/sydney-and-surrounds/guide-to-sydney-harbour.html">Sydney Opera House</a></h2>
                         </div>
 
                         <div class="slide" id="bridge" data-anchor="slide3">
-                            <div class="rFlagB">
-                                <h2 class="lnk"><a href="https://www.australia.com/en/places/sydney-and-surrounds/guide-to-sydney-harbour.html">Sydney Harbor Bridge</a></h2>
-                            </div>
+                            <h2 class="lFlagUp">Find Culture in Sydney</h2>
+                            <h2 class="lnk rFlagB"><a href="https://www.australia.com/en/places/sydney-and-surrounds/guide-to-sydney-harbour.html">Sydney Harbor Bridge</a></h2>
                         </div>
 
                         <div class="slide" id="zoo" data-anchor="slide4">
-                            <div class="rFlagB">
-                                <h2 class="lnk"><a href="https://taronga.org.au/taronga-zoo/vivid-at-taronga">Taronga Zoo</a></h2>
-                            </div>
-                        </div>
-
-                        <div id="sydContent">
-                            <div class="lFlagUp">
-                                <h2>Find Culture in Sydney</h2>
-                            </div>
+                            <h2 class="lFlagUp">Find Culture in Sydney</h2>
+                            <h2 class="lnk rFlagB"><a href="https://taronga.org.au/taronga-zoo/vivid-at-taronga">Taronga Zoo</a></h2>
                         </div>
                 </div>
-
 
 
                 <div class="section" id="aliceSprings" data-anchor="three">
-                    <div id="lFlagUp">
-                        <h2 id="u"><a href="https://www.australia.com/en/places/alice-springs-and-surrounds/guide-to-kata-tjuta.html">See History at Urulu National Park</a></h2>
-                    </div>
+                    <h2 class="rFlagUp" id="u"><a href="https://www.australia.com/en/places/alice-springs-and-surrounds/guide-to-kata-tjuta.html">See History at Urulu National Park</a></h2>
                 </div>
+
 
                 <div class="section" id="cairns" data-anchor="four">
                     <div class="rFlagB">
@@ -239,7 +224,6 @@ Making your site presentable
 
         <footer></footer>
 
-
-
     </body>
-    </html>
+
+</html>

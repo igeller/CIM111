@@ -4,11 +4,9 @@ $(document).ready(function(){
     //fullpage stuff
     $("#fullPage").fullpage({
         sectionsColor: ['pink', 'coral', 'pink', 'coral', 'pink'],
-        anchors:['one', 'two', 'three', 'four', 'five'],
         navigationTooltips: ['Home', 'Sydney', 'Cairns', 'Alice Springs', 'Kangaroo Island'],
         menu: "#menu",
         navigation: true,
-        
         slidesNavigation: true,
         scrollOverflow: true
     });
@@ -17,7 +15,7 @@ $(document).ready(function(){
     var id;
     $("#title").height($(".fp-tableCell").height());// does not work with height
     //$("#title").height($("#stuff img").height());
-    $("#sydContent").height($(".fp-slides").height());
+    //$("#sydContent").height($(".fp-slides").height());
     $(window).resize(function() {
         clearTimeout(id);
         id = setTimeout(doneTO, 1);
@@ -27,7 +25,7 @@ $(document).ready(function(){
         console.log($(".fp-tableCell").height());
         $("#title").height($(".fp-tableCell").height());
         //$("#title").height($("#stuff img").height());
-        $("#sydContent").height($(".fp-slides").height());
+        //$("#sydContent").height($(".fp-slides").height());
     }
 
     // var imgHeight = $("#stuff img").height();
