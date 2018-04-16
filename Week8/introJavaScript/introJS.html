@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+
+        <title>Intro JS</title>
+
+
+        <style >
+            .box{
+                width: 100px;
+                height: 30px;
+                background-color: aqua;
+                margin-bottom: 100px;
+            }
+
+        </style>
+    </head>
+
+
+
+    <body>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2">Click Here</div>
+        <div class="box" id="box3">Click Here</div>
+        <div id="box2Info"><p>This is box2 stuff.</p></div>
+
+
+        <script src="javaScript/jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                //all javaScript goes in here
+                $("body").css("background-color", "pink");
+                $("#box1").html("<h1>Hello All!!!!!</h1>");
+                $("#box2Info").hide();
+
+
+                $("#box2").click(function(){
+                    $("#box2Info").show();
+                });
+                $("#box3").click(function(){
+                    $("#box2Info").hide();
+                });
+
+            });
+            //no code after here
+        </script>
+
+    </body>
+</html>

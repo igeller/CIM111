@@ -1,0 +1,23 @@
+@import "mobile.css";
+
+@media only screen and (min-width: 960px){
+    body{
+        max-width: 960px;
+
+    }
+
+    header, main, footer{
+        max-width: 960px;
+    }
+
+
+/* home*/
+    .wrapperHome{
+        padding: 0;
+    }
+
+
+
+
+
+}

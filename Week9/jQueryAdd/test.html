@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jquery Demo</title>
+    <link rel="stylesheet" href="css/test.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+
+<div class="box story">
+  <img src="images/pup.jpg" alt="" id="puppy">
+  <div id="caption">original caption</div>
+</div>
+
+<a href="#" id="step1">step 1</a>
+<a href="#" id="step2">step 2</a>
+<a href="#" id="step3">step 3</a>
+
+<script type="text/javascript">
+$("#step1").click(function(){
+  //jquery here
+  $("#step1").hide();
+  $("#step2").show();
+  $("#puppy").attr("src", "images/lep.jpg");
+  $("#caption").html("this is a leopard!");
+})
+$("#step2").click(function(){
+  //jquery here
+})
+$("#step3").click(function(){
+  //jquery here
+})
+</script>
+
+
+  </body>
+</html>

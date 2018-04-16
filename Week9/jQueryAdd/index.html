@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jquery Demo</title>
+    <link rel="stylesheet" href="css/master.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+<div class="box">
+  My Box is cool!
+</div>
+<br>
+<a href="#" id="sam">Click Sam!</a> | <a href="#" id="bob">Click Bob!</a>
+<br>
+ <a href="#" id="jane">Hide</a> | <a href="#" id="mary">Show</a>
+<br><br>
+<img src="images/pup.jpg" alt="puppy" id="pup">
+ <script type="text/javascript">
+ $(document).ready(function(){
+     // $(".box").css("background", "blue");
+     $("#sam").click(function(){
+       $(".box").removeClass( "box-bob" );
+       $(".box").addClass( "box-big" );
+       $(".box").html("Woohooo you clicked Sam!");
+     })
+     $("#bob").click(function(){
+       $(".box").removeClass( "box-big" );
+       $(".box").addClass( "box-bob" );
+       $(".box").html("Woohooo you clicked Bob!");
+     })
+     $("#jane").click(function(){
+       $(".box").hide();
+       $("#pup").attr("src","images/lep.jpg");
+     });
+     $("#mary").click(function(){
+       $(".box").show();
+     });
+     // $("#dummyimage").attr("src","http://dummyimage.com/450x255/");
+      });
+ </script>
+  </body>
+</html>

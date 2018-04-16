@@ -1,0 +1,379 @@
+
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Fredericka+the+Great|Grand+Hotel|Handlee|Hind+Siliguri:500|Parisienne|Poiret+One|Pompiere|Rochester|Sacramento|Shadows+Into+Light+Two');
+
+body{
+    width: 1500px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    background-color: rgb(247, 216, 143);
+}
+
+
+nav{
+    float: right;
+    margin-left: 100px;
+    width: 525px;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+nav ul{
+    padding-left: 0;
+}
+
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 20px;
+    font-size: 15px;
+    margin-top: 60px;
+    text-transform: uppercase;
+
+    /*make the navigation not move when I hover*/
+}
+
+header{
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 80px;
+    width: 1100px;
+
+}
+
+
+
+main{
+    text-align: left;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    width: 1100px;
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: rgb(76, 150, 147);
+
+}
+
+ul{
+    display: inline-block;
+    line-height: 20px;
+    margin: 0px;
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+    font-family: 'Rochester', cursive;
+    color: rgb(76, 150, 147);
+    font-weight: bold;
+    display: inline-block;
+}
+
+h2{
+    text-transform: uppercase;
+    color: black;
+    line-height: 10px;
+    font-size: 15px
+
+}
+
+
+h5{
+    line-height: 0px;
+    color:black;
+    font-size: 15px;
+    text-align: left;
+    font-family: 'Handlee', cursive;
+}
+ p{
+    font-family: 'Handlee';
+    font-size: 16px;
+ }
+
+ img{
+     float: left;
+     display: inline-block;
+ }
+
+td{
+    width: 400px;
+    text-align: left;
+    padding: 0;
+}
+
+tr th {
+        padding-bottom: 15px;
+}
+
+tr{
+    width: 375px;
+    text-align: center;
+    vertical-align: top;
+}
+
+ table{
+     width: 750px;
+     margin: 0 auto;
+ }
+
+ footer{
+     text-align: right;
+     font-family: 'Hind Siliguri';
+     line-height: 20px;
+
+ }
+
+
+
+
+
+#navAbout{
+    padding-left: 0px
+}
+
+#nameTag{
+    display: inline-block;
+    line-height: 0px;
+    float: left;
+}
+
+#skillsNavPad{
+    padding-right: 0px;
+}
+
+#h4About{
+    line-height: 5px;
+    margin: 0 auto;
+    font-family: 'Hind Siliguri';
+    font-size: 16px;
+    font-weight: lighter;
+
+}
+
+#aboutP{
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    margin: 26.5px 80px;
+}
+
+#aboutIntersts{
+    display: inline-block;
+    width: auto;
+    height:auto;
+    float: right;
+    margin: 0;
+    margin-top: 30.5px;
+    margin-bottom: 33.5px;
+    padding: 0;
+}
+
+#aboutSection{
+    height: 200px;
+}
+
+
+
+#ulMinors{
+    margin-top: 1px;
+}
+
+#ulInterests{
+    margin-top: 10px;
+    font-family: 'Handlee';
+}
+
+#description{
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: 15px;
+    font-weight: lighter;
+    color: grey;
+    font-size: 12px;
+    text-align: center;
+}
+
+#stuffWidth{
+    width: 1100px;
+    height: 80px;
+    padding: 0 20px;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    margin: 0 auto;
+    margin-left: 160px;
+    background-color: white;
+    border-bottom: 5px solid pink;
+}
+
+
+#schedLink{
+    display: inline-block;
+    float: right;
+    font-family: 'Fredericka the Great';
+    margin-bottom: 0px;
+    margin-left: 500px;
+    margin-right: -50px;
+}
+
+
+#campBullets{
+    margin-left: 110px;
+    margin-top: -60px;
+}
+
+#backToResume{
+    margin-bottom: 0px;
+}
+
+#scheduleTable{
+    font-family: 'Hind Siliguri';
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    line-height: 15px;
+}
+
+#schedDay{
+    color: rgb(255, 136, 96);
+}
+
+#schedHeader{
+    background-color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 180px;
+
+    border-bottom: 5px solid pink;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+.names{
+    display: inline-block;
+    color: purple;
+    text-align: left;
+    margin-right: 5px;
+    color: rgb(76, 150, 147);
+
+}
+
+.location{
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+.dates{
+    font-family: 'Hind Siliguri';
+    font-size: 12px;
+    width: 80px;
+    display: flex;
+    float: left;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: -20px;
+    margin-right: 50px;
+    color: rgb(255, 136, 96);
+}
+
+.company{
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.titleLocationInfo{
+    margin-bottom: 5px;
+    margin-top: 0;
+    color: rgb(150, 152, 155);
+}
+
+
+.additionalExperience{
+    margin-top: 30px;
+}
+
+.BTP{
+    display: block;
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: 200px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: lighter;
+    font-family: 'Fredericka the Great';
+}
+
+
+.section{
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.sectionName{
+    display: inline-block;
+    float: left;
+    text-align: center;
+    width: 150px;
+    padding-left: 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 25px;
+    color: rgb(76, 150, 147);
+    line-height: 30px;
+
+}
+
+
+
+.sectionContents{
+        display: inline-block;
+        width: 750px;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 50px;
+        font-family: 'Hind Siliguri';
+        margin-left: 50px;
+        border-left: 5px solid pink;
+}
+
+.addy{
+    margin-right: 185px;
+    margin-top: 15px;
+}
+
+.schedCells td{
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 10px;
+}

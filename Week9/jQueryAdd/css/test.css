@@ -1,0 +1,13 @@
+.box {
+  background: lime;
+  margin: 15px;
+  width: 300px;
+  height: 300px;
+  color: #000;
+  padding: 10px;
+}
+
+
+#step2, #step3 {
+  display: none;
+}

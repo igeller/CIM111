@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Grand+Hotel');
+
+h2{
+    margin: 0;
+    display: block;
+    font-size: 10vmin;
+    font-family: 'Grand Hotel', cursive;
+    text-transform: sentence;
+    font-weight: lighter;
+    color: white;
+}
+
+#home{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    background-image: url("../Images/nowords.png");
+    background-size: auto 100%;
+    background-position: right right;
+    background-repeat: no-repeat;
+}
+
+
+
+#title{
+    display: block;
+    position: absolute;
+    width: 20% !important;
+    background-color: rgba(224, 197, 168, .4);
+    margin-left: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    z-index: 999;
+    top:0;
+    left: 0;
+    bottom: 0;
+}
+
+#title h1{
+    font-size: 8vmin;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#title p{
+    font-size: 3vmin;
+    text-align: center;
+}
+
+
+#sydney .fp-slides{
+    display: inline-block;
+    width: 1;
+}
+
+#sydney h2{
+    display: block;
+    font-size: 10vmin;
+    font-family: 'Grand Hotel', cursive;
+    text-transform: sentence;
+    font-weight: lighter;
+    color: white;
+    text-transform: sentence;
+}
+
+#lFlagUp {
+    display: inline-block;
+    position: absolute;
+    width: auto !important;
+    height: auto;
+    margin-top: 3%;
+    background-color: rgba(132, 132, 132, .4);
+    padding-left: 3%;
+    padding-right: 3%;
+    z-index: 999;
+    right: 0;
+    top: 0;
+}
+
+
+.lnk a{
+    margin-bottom: 0;
+    color: white;
+    text-decoration: none;
+}
+
+#syd{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/5c/Sydney_skyline_at_dusk_-_Dec_2008.jpg");
+    /* By Diliff [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0) or GFDL (http://www.gnu.org/copyleft/fdl.html)], from Wikimedia Commons */
+    background-size: auto 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+#opera{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6f/Sydney_Opera_House_%286409684029%29.jpg");
+    /* By Pedro Szekely from Los Angeles, USA (Sydney Opera House) [CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons */
+    background-size: 105% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#bridge{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/33/Sydney_harbour_bridge_dusk.jpg");
+    /* By Adam.J.W.C. [CC BY-SA 2.5 (https://creativecommons.org/licenses/by-sa/2.5)], from Wikimedia Commons */
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+#zoo{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/69/Taronga_Zoo_-Sydney%2C_Australia-21March2006.jpg");
+    /* By tom heyes from stockport, uk (Taronga Zoo  Uploaded by Snowmanradio) [CC BY 2.0 (https://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons */
+    background-size: 100%;
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+
+
+#cairns{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/df/Reef_Snorkelling_on_the_Great_Barrier_Reef.jpg");
+    /* By User: (WT-shared) Queensland at wts wikivoyage [CC BY-SA 4.0-3.0-2.5-2.0-1.0 (https://creativecommons.org/licenses/by-sa/4.0-3.0-2.5-2.0-1.0)], from Wikimedia Commons */
+    background-size: 100% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#cairns .fp-tableCell{
+    padding: 0;
+}
+
+#cairns h2{
+    display: block;
+    font-size: 10vmin;
+    font-family: 'Grand Hotel', cursive;
+    font-weight: lighter;
+    margin: 0;
+}
+
+#i a{
+    margin-top: 30%;
+    margin-bottom: 0;
+    color: white;
+    text-decoration: none;
+}
+
+#i a:hover{
+    color: aqua;
+    font-style: italic;
+}
+
+.rFlagB {
+    display: inline-block;
+    position: absolute;
+    width: auto !important;
+    height: auto;
+    margin-bottom: 3%;
+    background-color: rgba(132, 132, 132, .4);
+    padding-left: 3%;
+    padding-right: 3%;
+    z-index: 999;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+
+
+#aliceSprings{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3f/Uluru%2C_helicopter_view.jpg");
+    /* By Corey Leopold (Uluru/Ayers Rock) [CC BY 2.0 (https://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons */
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#aliceSprings h2{
+    display: block;
+    font-size: 10vmin;
+    font-family: 'Grand Hotel', cursive;
+    text-transform: sentence;
+    font-weight: lighter;
+    color: white;
+    text-transform: sentence;
+}
+
+#rFlagUp {
+    display: inline-block;
+    position: absolute;
+    width: auto !important;
+    height: auto;
+    margin-top: 3%;
+    background-color: rgba(132, 132, 132, .4);
+    padding-left: 3%;
+    padding-right: 3%;
+    z-index: 999;
+    right: 0;
+    top: 0;
+}
+
+#u a{
+    margin-bottom: 0;
+    color: white;
+    text-decoration: none;
+
+}
+#u a:hover{
+    margin-bottom: 0;
+    font-style: italic;
+    color: green;
+}
+
+
+
+
+
+
+
+#kangIsland{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/29/Kangaroo_Island_kangaroos.jpg");
+    /* By Paul Asman and Jill Lenoble [CC BY 2.0 (https://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons */
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#kangIsland h2{
+    display: block;
+    font-size: 10vmin;
+    font-family: 'Grand Hotel', cursive;
+    text-transform: sentence;
+    font-weight: lighter;
+    color: white;
+}
+.lFlagUp {
+    display: inline-block;
+    position: absolute;
+    width: auto !important;
+    height: 7em;
+    margin-top: 3%;
+    background-color: rgba(132, 132, 132, .4);
+    padding-left: 3%;
+    padding-right: 3%;
+    z-index: 999;
+    left: 0;
+    top: 0;
+}
+
+#n a{
+    margin-bottom: 0;
+    color: white;
+    text-decoration: none;
+
+}
+#n a:hover{
+    margin-bottom: 0;
+    font-style: italic;
+    color: green;
+}

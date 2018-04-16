@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+    <meta name="author" content="Izzy Geller">
+    <meta name="keywords" content="how to, peanutbutter, jelly, sandwich">
+    <meta name="description" content="This website details how to make a peanutbutter and jelly sandwich.">
+
+    <script src="javaScript/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width: 960px)">
+    <link rel="stylesheet" href="css/mobile.css" media="only screen and (min-width: 0px) and (max-width: 960px)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>It's Peanutbutter Jelly Time</title>
+</head>
+
+
+<body>
+    <header>
+        <h1>It's Peanutbutter Jelly Time</h1>
+        <h3>A guide to making the perfect peanut butter and jelly!</h3>
+    </header>
+
+    <!--images
+    <img src="images/pbjingredients.jpg" alt="">
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Peanut_butter_and_jelly_sandwich_%2811120683916%29.jpg" alt="">
+    By Matias Garabedian from Montreal, Canada (Peanut butter and jelly sandwich) [CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons
+    By Matias Garabedian from Montreal, Canada (Peanut butter and jelly sandwich) [<a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a>], <a href="https://commons.wikimedia.org/wiki/File:Peanut_butter_and_jelly_sandwich_(11120683916).jpg">via Wikimedia Commons</a>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Pbnjmpegman.jpg" alt="">
+    attribution: By MpegMan (http://en.wikipedia.org/wiki/Image:Pbnjmpegman.jpg) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/)], via Wikimedia Commons
+    By MpegMan (http://en.wikipedia.org/wiki/Image:Pbnjmpegman.jpg) [<a href="http://www.gnu.org/copyleft/fdl.html">GFDL</a> or <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA-3.0</a>], <a href="https://commons.wikimedia.org/wiki/File:Pbnjmpegman.jpg">via Wikimedia Commons</a>
+
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Peanut_butter_and_jelly_sandwich_%2811120719784%29.jpg" alt="">
+    By Matias Garabedian from Montreal, Canada (Peanut butter and jelly sandwich) [CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons
+    By Matias Garabedian from Montreal, Canada (Peanut butter and jelly sandwich) [<a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a>], <a href="https://commons.wikimedia.org/wiki/File:Peanut_butter_and_jelly_sandwich_(11120719784).jpg">via Wikimedia Commons</a>
+
+    <img src="http://www.smallfriendly.com/.a/6a0133ec490e97970b01b8d1918294970c-800wi" alt="">
+-->
+<main>
+    <!--<div class="tooltip"></div>-->
+    <div class="stepSquare" id="s1">
+        <div class="squareContentContainer hideSquare">
+            <div class="content">
+                <div class="stuff">
+                    <h4>Step 1: Ingredients</h4>
+                    <ul>
+                        <li>Knife</li>
+                        <li>Peanutbutter<button class="tip">TIP</button><p class="TipP">(My personal favorite is JIF creamy)</p></li>
+                        <li>Jelly<button class="tip">TIP</button><p class="TipP">(My personal favorite is strawberry)</p></li>
+                        <li>2 Slices of Bread<button class="tip">TIP</button><p class="TipP">(The best bread is challah)</p></li>
+                        <li>Plate</li>
+                    </ul>
+                </div>
+                <img src="images/pbjingredients.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="squareContentContainer showSquare" >
+            <h4 class="stepShowSquareTitle">Step 1</h4>
+        </div>
+        <div class="squareContentContainer picSquare" >
+            <img id="step1pic" src="images/pbjingredients.jpg" alt="">
+        </div>
+
+    </div>
+
+
+
+    <div class="stepSquare" id="s2">
+        <div class="squareContentContainer hideSquare" >
+            <div class="content">
+                <div class="stuff">
+                    <h4>Step 2: The Spread</h4>
+                    <ol>
+                        <li>Spread your peanutbutter edge to edge on one of the pieces of bread</li>
+
+                        <li>Clean the knife by wiping of any excess peanutbutter on your fingers and eating it</li>
+                        <li>Spread jelly edge to edge on the other peice of bread<button class="tip">TIP</button><p class="TipP">(If you are not going to eat the sandwhich immediately, before covering the other peice of bread with jelly first spread a thin layer of peanutbutter edge to edge)</p></li>
+                    </ol>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Peanut_butter_and_jelly_sandwich_%2811120683916%29.jpg" alt="By Matias Garabedian">
+
+            </div>
+        </div>
+
+        <div class="squareContentContainer showSquare" >
+            <h4 class="stepShowSquareTitle">Step 2</h4>
+        </div>
+        <div class="squareContentContainer picSquare">
+            <img id="step2pic" src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Peanut_butter_and_jelly_sandwich_%2811120683916%29.jpg" alt="By Matias Garabedian">
+        </div>
+    </div>
+
+
+    <div class="stepSquare"  id="s3">
+        <div class="squareContentContainer hideSquare" >
+            <div class="content">
+                <div class="stuff">
+                    <h4>Step 3: The Close</h4>
+                    <ul>
+                        <li>Close the sandwhich by placing the jelly on the peanutbutter</li>
+                    </ul>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Pbnjmpegman.jpg" alt="By MpegMan">
+            </div>
+
+        </div>
+        <div class="squareContentContainer showSquare" >
+            <h4 class="stepShowSquareTitle">Step 3</h4>
+        </div>
+        <div class="squareContentContainer picSquare">
+            <img id="step3pic" src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Pbnjmpegman.jpg" alt="By MpegMan">
+        </div>
+    </div>
+
+
+    <div class="stepSquare" id="s4">
+        <div class="squareContentContainer hideSquare" >
+            <div class="content">
+                <div class="stuff">
+                    <h4>Step 4: The Cut</h4>
+                    <table>
+                        <tr>
+                            <th>For One</th>
+                            <th>For Sharing</th>
+
+
+                        </tr>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>No need to cut, dig in.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Triangles</li>
+                                        <li>rectangles</li>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Peanut_butter_and_jelly_sandwich_%2811120719784%29.jpg" alt="By Matias Garabedian">
+
+            </div>
+
+        </div>
+        <div class="squareContentContainer showSquare" >
+            <h4 class="stepShowSquareTitle">Step 4</h4>
+        </div>
+        <div class="squareContentContainer picSquare">
+            <img id="step4pic" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Peanut_butter_and_jelly_sandwich_%2811120719784%29.jpg" alt="By Matias Garabedian">
+        </div>
+    </div>
+
+
+    <div class="stepSquare" id="s5">
+        <div class="squareContentContainer hideSquare" >
+            <div class="content">
+                <div class="stuff">
+                    <h4>Step 5: Indulge</h4>
+                    <ul>
+                        <li>Eat your creation<button class="tip">TIP</button><p class="TipP">(Add a glass of milk and an apple to really treat yourself)</p></li>
+                    </ul>
+                </div>
+                <img src="http://www.smallfriendly.com/.a/6a0133ec490e97970b01b8d1918294970c-800wi" alt="">
+            </div>
+
+        </div>
+
+        <div class="squareContentContainer showSquare" >
+            <h4 class="stepShowSquareTitle">Step 5</h4>
+        </div>
+        <div class="squareContentContainer picSquare">
+            <img id="step5pic" src="http://www.smallfriendly.com/.a/6a0133ec490e97970b01b8d1918294970c-800wi" alt="">
+        </div>
+    </div>
+
+
+
+
+
+
+
+</main>
+
+
+<footer></footer>
+</body>
+</html>

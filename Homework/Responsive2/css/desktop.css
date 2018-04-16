@@ -1,0 +1,32 @@
+@import "mobile.css";
+
+@media only screen and (min-width: 960px){
+
+/*events*/
+    .wrapperEvents{
+        padding-left: 8%;
+        padding-right: 1%;
+        padding-bottom: 1%;
+        /*background-color: rgba(0, 204, 102, .2);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 20px;*/
+    }
+
+
+
+
+    header, main, footer{
+        max-width: 960px;
+    }
+
+
+/* home*/
+    .wrapperHome{
+        padding: 0;
+    }
+
+
+
+
+
+}

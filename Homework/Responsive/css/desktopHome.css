@@ -1,0 +1,131 @@
+@import "desktop.css";
+
+
+@media only screen and (min-width: 960px){
+    main{
+        grid-area: main;
+        display: grid;
+        grid-template-areas: "col1 col2"
+                             "descriptionRow descriptionRow";
+        grid-template-rows: 2fr;
+        grid-template-columns: 65% 35%;
+        font-family: sans-serif;
+    }
+
+
+
+
+    table{
+        height: 100%;
+        font-family: 'Dosis', sans-serif;
+    }
+
+    table tr{
+        padding-bottom: 5px;
+    }
+
+    table tr th{
+        text-align: center;
+        width: 15px;
+    }
+
+    table tr td{
+        text-align: left;
+        padding-bottom: 5px;
+        padding-left: 3%;
+    }
+
+    p{
+        margin: 0 auto;
+    }
+
+    #dogPic{
+        grid-area: col1;
+        height: 300px;
+    }
+
+    #dogPic img{
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    #description{
+        grid-area: col2;
+        height: 300px;
+        font-family: 'Dosis', sans-serif;
+        border-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    #description p{
+        margin: 0 auto;
+        padding: 8% 5%;
+        text-align: justify;
+    }
+
+
+    #moreDescription{
+        grid-area: descriptionRow;
+        grid-column: span 2;
+
+        display: grid;
+        grid-template-areas: "ccip cycle types"
+                             "ccDescript cycleDescript typeDescript";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:  1fr;
+        grid-column-gap: 2%;
+    }
+
+    .title{
+        grid-area: ccip  cycle  types;
+        align-self: center;
+        text-align: center;
+        border-top-left-radius:15px;
+        border-top-right-radius: 50px;
+        height: 100%;
+    }
+
+    .title h4{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: 'Love Ya Like A Sister', cursive;
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    .descript{
+        grid-area: ccDescrip, cycleDescript,  typeDescript;
+        text-align: justify;
+        padding: 10px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 30px;
+    }
+
+    .backgroundO{
+        background-color: rgba(255, 153, 51, .4);
+    }
+
+    .backgroundG{
+        background-color: rgba(0, 204, 102, .2);
+    }
+
+    .aboutCCI p{
+        text-indent: 5%;
+        font-family: 'Dosis', sans-serif;
+
+    }
+
+    .title img{
+        height: 50px;
+        margin-top: 20px;
+        align-self: center;
+    }
+
+}

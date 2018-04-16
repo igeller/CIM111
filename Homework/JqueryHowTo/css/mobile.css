@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|Josefin+Slab|Open+Sans+Condensed:300');
+@viewport{
+    width: auto;
+}
+
+html{
+    background-color: white;
+}
+
+body{
+    margin: 0 auto;
+
+}
+
+main, header, footer{
+    background-color: rgba(244, 111, 88, .8);
+    margin: 0 auto;
+    font-family: 'Abril Fatface', cursive;
+    border-radius: 10px;
+
+
+}
+ol{
+    padding: 0;
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-left: 8%;
+    margin-bottom: 2%;
+    color: yellow;
+
+}
+
+ul{
+    padding: 0;
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-left: 8%;
+    margin-bottom: 2%;
+    color: yellow;
+
+}
+
+ul li{
+    width: auto;
+}
+
+main{
+    font-family: 'Josefin Slab', serif;
+    color: yellow;
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 0;
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(3, calc(100%/3));
+    grid-template-areas: "s1 r1 r1"
+                         "r2 s2 r2"
+                         "r3 r3 s3"
+                         "r4 s4 r4"
+                         "s5 r5 r5";
+
+    /*
+                         display: grid;
+                         grid-template-rows: repeat(5, 1fr);
+                         grid-template-areas: "r1" "r2" "r3" "r4" "r5";
+                         */
+}
+
+header{
+    margin-top: 2%;
+}
+
+header h1{
+    display: inline-block;
+    margin: 0 28%;
+    margin-top: 2%;
+    color: purple
+}
+header h3{
+    display: inline-block;
+    margin: 0 27%;
+    margin-bottom: 2%;
+    color: brown;
+}
+
+h3{
+    font-family: 'Josefin Slab', serif;
+}
+
+h4{
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    margin: 2% auto;
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+}
+
+table{
+    width: 100%;
+    font-size: 20px;
+}
+
+table ul{
+    margin-left: 20%;
+    margin-bottom: 0;
+}
+
+table tr th{
+    width: 50%;
+    padding: 0;
+    padding-bottom: 2%;
+
+}
+table tr td{
+    width: 50%;
+    padding: 0;
+}
+
+.stepSquare{
+    background-color: orange;
+    width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+
+#s1{
+    grid-area: s1;
+    grid-row: 1/1;
+    grid-column: 1/1;
+}
+
+#s2{
+    grid-area: s2;
+    grid-row: 2/2;
+    grid-column: 2/2;
+}
+
+#s3{
+    grid-area: s3;
+    grid-row: 3/3;
+    grid-column: 3/3;
+}
+#s4{
+    grid-area: s4;
+    grid-row: 4/4;
+    grid-column: 2/2;
+}
+#s5{
+    grid-area: s5;
+    grid-row: 5/5;
+    grid-column: 1/1;
+}
+
+.squareContentContainer{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.hideSquare{
+    grid-column: 1/2;
+    display: none;
+    height: inherit;
+}
+.stuff{
+    display: inline-block;
+    margin-right: 5%;
+}
+.content{
+    background-color: purple;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
+    margin: 2% 0;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.content img{
+    display: block;
+    max-width: 94%;
+    margin: 10% 0;
+    margin-right: 4%;
+    float: right;
+}
+
+.showSquare{
+    background-color: purple;
+    height: inherit;
+    margin: 5% auto;
+    border-radius: 10px;
+
+}
+
+.picSquare{
+    grid-column: 1/2;
+    margin: 15% auto;
+    background-color: purple;
+}
+.picSquare img{
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    border-radius: 20px;
+}
+
+#step5pic{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#s5 .content img{
+    height: 300px;
+    align-self: flex-end;
+}
+
+.stepShowSquareTitle{
+    display: inline-block;
+    width: 100%;
+    margin: 50% auto;
+    text-align: center;
+    font-size: 60px;
+}
+
+.tip{
+    display: inline-block;
+    background-color: yellow;
+    border: 0;
+    margin-left: 3%;
+    font-size: 6px;
+    border-radius: 20px;
+}
+
+#step1pic #step2pic #step3pic #step4pic #step5pic img{
+    border-radius: 20px;
+}
+
+
+
+
+@media only screen and (max-width:960px){
+    main{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "s1 ."
+                             ". s2"
+                             "s3 ."
+                             ". s4"
+                             "s5 .";
+    }
+    #s1{
+        grid-area: s1;
+        grid-row: 1/1;
+        grid-column: 1/1;
+    }
+
+    #s2{
+        grid-area: s2;
+        grid-row: 2/2;
+        grid-column: 2/2;
+    }
+
+    #s3{
+        grid-area: s3;
+        grid-row: 3/3;
+        grid-column: 1/1;
+    }
+    #s4{
+        grid-area: s4;
+        grid-row: 4/4;
+        grid-column: 2/2;
+    }
+    #s5{
+        grid-area: s5;
+        grid-row: 5/5;
+        grid-column: 1/1;
+    }
+
+
+}
+
+
+
+
+
+@media only screen and (max-width:600px){
+    main{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: 100%;
+        grid-template-areas: "s1"
+                             "s2"
+                             "s3"
+                             "s4"
+                             "s5";
+    }
+
+    #s1{
+        grid-area: s1;
+        grid-row: 1/1;
+        grid-column: 1/1;
+    }
+
+    #s2{
+        grid-area: s2;
+        grid-row: 2/2;
+        grid-column: 1/1;
+    }
+
+    #s3{
+        grid-area: s3;
+        grid-row: 3/3;
+        grid-column: 1/1;
+    }
+    #s4{
+        grid-area: s4;
+        grid-row: 4/4;
+        grid-column: 1/1;
+    }
+    #s5{
+        grid-area: s5;
+        grid-row: 5/5;
+        grid-column: 1/1;
+    }
+
+}

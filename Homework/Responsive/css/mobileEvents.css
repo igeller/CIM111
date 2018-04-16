@@ -1,0 +1,186 @@
+@import "mobile.css";
+
+@media only screen and (max-width:960px){
+
+    @viewPort{
+            width: device-width;
+    }
+
+    @import "desktop.css";
+
+
+    main{
+        grid-area: main;
+        width: 100%;
+        display: grid;
+        grid-template-areas: "monthName" "calendar" "info";
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 1fr 10%;
+        font-family: 'Dosis', sans-serif;
+        grid-row-gap: 0;
+    }
+
+    p{
+        margin: 0 auto;
+        padding: 2% 0;
+        font-family: 'Dosis', sans-serif;
+    }
+
+
+    .monthName{
+        grid-area: monthName;
+        display: grid;
+        grid-template-areas: "m1 m2 m3 m4";
+        grid-template-rows: auto;
+        grid-template-columns: 25% 25% 25% 25%;
+        height: auto;
+        font-family: 'Dosis', sans-serif;
+    }
+
+
+
+    .info{
+        grid-area: info;
+        display: grid;
+        grid-template-areas: "in1 in2 in3 in4";
+        grid-template-rows: 1fr;
+        grid-template-columns: 25% 25% 25% 25%;
+        height: auto;
+        font-family: 'Dosis', sans-serif;
+    }
+
+    .monthOption{
+        grid-area: m1 m2 m3 m4;
+        background-color: rgba(255, 153, 51, .4);
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        text-align: center;
+        align-self: center;
+        font-weight: bold;
+    }
+
+    .monthOption a{
+        padding: 2% 0;
+        display: block;
+        font-family: 'Love Ya Like A Sister', cursive;
+        font-weight: bold;
+    }
+
+
+    .in{
+        grid-area: in1 in2 in3 in4;
+        background-color: rgba(124, 128, 135, .4);
+        text-transform: capitalize;
+        text-align: center;
+        align-self: center;
+        font-family: 'Dosis', sans-serif;
+        margin-top: 10px;
+        border-radius: 20px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+
+    .calendar{
+        grid-area: calendar;
+        background-color: rgba(124, 128, 135, .4);
+        display: grid;
+        grid-template-areas: "month";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr;
+        font-family: 'Dosis', sans-serif;
+    }
+
+    .month{
+        grid-area: month;
+        display: grid;
+        grid-template-areas: "week1" "week2" "week3" "week4" "week5" "week6";
+        grid-template-rows: repeat(11, auto);
+        grid-template-columns: 100%;
+        font-family: 'Dosis', sans-serif;
+    }
+
+
+    .week{
+        grid-area: week1 week2 week3 week4 week5 week6;
+        display: grid;
+        grid-template-areas: "su m t w th f sa";
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        font-family: 'Dosis', sans-serif;
+    }
+
+    .weekLabel{
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    .dayLabel{
+        grid-area: su m t w th f sa;
+        background-color: rgba(0, 204, 102, .4);
+        border-style: solid;
+        border-width: thin;
+        text-transform: capitalize;
+        font-family: 'Dosis', sans-serif;
+    }
+
+    .dayDate{
+        grid-area: su m t w th f sa;
+        background-color: rgba(255, 153, 51, .4);
+        text-align: right;
+        border-style: solid;
+        border-width: thin;
+        padding-right: 5px;
+        font-family: 'Dosis', sans-serif;
+    }
+
+    .dayEvent{
+        grid-area: su m t w th f sa;
+        height:50px;
+        border-style: solid;
+        border-width: thin;
+        padding-left: 5px;
+        font-family: 'Dosis', sans-serif;
+    }
+
+    .pMult{
+        padding-bottom: 0;
+    }
+
+    .training{
+        color: red;
+    }
+
+    .events{
+        color: yellow;
+    }
+
+    .genBody{
+        color: green;
+    }
+
+    .eboard{
+        color: blue;
+    }
+
+    .active{
+        background-color: rgba(124, 128, 135, .4);
+    }
+
+    #train{
+        color: red;
+    }
+
+    #events{
+        color: yellow;
+    }
+
+    #genBod{
+        color: green;
+    }
+
+    #exec{
+        color: blue;
+    }
+
+}

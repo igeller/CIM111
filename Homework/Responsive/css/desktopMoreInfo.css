@@ -1,0 +1,121 @@
+@import "desktop.css";
+
+main{
+    grid-row-gap: 0;
+}
+
+
+p{
+    margin-top: 20px;
+}
+
+header{
+    max-height: 81.56px;
+}
+
+.info{
+    width: 100%;
+    grid-area: main;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "faq faq"
+                         "sect1 sect2"
+                         "contact contact";
+    grid-template-rows: 1fr;
+    grid-template-columns: 49.5% 49.5%;
+    grid-column-gap: 1%;
+}
+
+.faq{
+    grid-area: faq;
+    grid-column: 1/3;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    font-family: 'Bowlby One SC', cursive;
+
+}
+
+.faq h2{
+    margin: 0;
+}
+
+.faqSection{
+    grid-area: faqSection;
+    background-color: rgba(0, 204, 102, .2);
+    text-align: center;
+    border-top-left-radius:30px;
+    border-top-right-radius: 30px;
+    font-family: 'Love Ya Like A Sister', cursive;
+    text-transform: capitalize;
+}
+
+.col{
+    grid-area: col1 col2;
+    display: grid;
+    grid-template-areas: "faqSection"
+                         "q1"
+                         "q1"
+                         "q1";
+    grid-template-columns:100%;
+    grid-row-gap: 10px;
+    background-color: rgba(255, 153, 51, .4);
+    padding-bottom: 10px;
+    border-top-left-radius:30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 30px;
+}
+
+.faqSection{
+    grid-area: faqSection;
+    background-color: green;
+    text-align: center;
+    border-top-left-radius:30px;
+    border-top-right-radius: 30px;
+}
+
+.qA{
+    grid-area: q1 q2 q3;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.qA h5{
+    font-size: 15px;
+}
+
+.qA p{
+    padding-left: 10px;
+}
+
+.contact{
+    grid-area: contact;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-areas: "jack jamie kira";
+    grid-template-columns: 32.5% 32.5% 32.5%;
+    grid-template-rows: auto;
+    grid-column-gap: 1.2%;
+    background-color: rgba(124, 128, 135, .4);
+    height: auto;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.contact h5{
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+
+.person{
+    grid-area: jack jamie kira;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.person h5, .person h6, .person p{
+    margin: 5px 0;
+    color: green;
+}

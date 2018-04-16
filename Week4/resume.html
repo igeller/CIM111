@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Me</title>
+
+        <!--Meta tags also go in the head
+            they tell the search engine some basic instruction
+                author: gives ownersip/ authorship to the person named in content
+                keywords are used by search engines to see what website is about
+                description: long worded description about website
+            You cannot actually see a meta tag(strictly for search engines)-->
+        <meta name="author" content="Izzy Geller">
+        <meta name="keywords" content="resume, education, work">
+        <meta name="description" content="This website is about me.">
+
+        <style>
+            body{
+                font-family: sans-serif;
+            }
+            h1{
+                color: pink;
+            }
+            h3 em{
+                text-decoration: underline;
+                color: green;
+            }
+            nav ul li{
+                list-style: none;
+                display: inline-block;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color: purple;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            nav ul li a:hover {
+                background: pink;
+
+            }
+
+            a{
+                text-decoration: none;
+                color: green;
+            }
+            a:hover{
+                color: black;
+            }
+        </style>
+
+
+    </head>
+
+
+    <body>
+        <header>
+            <!--Names, and pictures and other things like the nav tag-->
+            <h1>Izzy Geller's Resume</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li> <!--when you upload this without a file made for it you get a 404 error
+                                                                    which means the document doesnt exist-->
+                </ul>
+            </nav>
+        </header>
+
+
+        <main>
+            <section>
+                <h1>Objective</h1>
+                <h3>Is to make awesome things!</h3>
+            </section>
+
+            <br><br>
+
+            <section>
+                <h1>Current Teaching</h1>
+                <h3><em>Lecturer, University of Miami</em></h3>
+                <h5>Classes</h5>
+                <ul>
+                    <li>Web Lab</li>
+                    <li>Creative Coding</li>
+                    <li>Physical Computing</li>
+                </ul>
+            </section>
+
+            <aside>
+                <a href="http://www.github.com/zevenrodroguez">For more examples visit github.com/zevenrodroguez</a>
+            </aside>
+
+
+            <article>
+                <h1>What I like to do on weekends!</h1>
+                <p>I do stuff!!</p>
+                <a href=""><strong>read more</strong> </a>
+            </article>
+        </main>
+
+
+        <footer>
+        </footer>
+    </body>
+</html>

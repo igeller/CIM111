@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+body{
+    font-family: sans-serif;
+    background-color: red;
+}
+
+header{
+    background-color: white;
+    width: 960px;
+    margin: 0 auto; /* 0 = set top ad bottom to nothing auto = set left and right so they are equal amts on both sides */
+}
+
+main{
+    background-color: white;
+    width: 940px;
+    margin: 0 auto; /* 0 = set top ad bottom to nothing auto = set left and right so they are equal amts on both sides */
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+footer{
+    background-color: white;
+    width: 960px;
+    margin: 0 auto; /* 0 = set top ad bottom to nothing auto = set left and right so they are equal amts on both sides */
+}
+
+h1 {
+    color: pink;
+    font-family: 'Indie Flower', cursive;
+}
+
+h3 em{
+    text-decoration: underline;
+    color: green;
+}
+
+nav{
+    width: 338px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav ul{
+    padding: 0;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: purple;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    background-color: pink;
+}
+
+a{
+    text-decoration: none;
+    color: green;
+}
+
+a:hover{
+    color: black;
+}
+
+p{
+    line-height: 50px;
+}
+
+#centerText{
+    text-align: center;
+    color: blue;
+}
+
+.greyOut{
+    color: grey;
+}
+
+section{
+    margin-bottom: 100px;
+}
+
+.work{
+    margin-bottom: 50px;
+    width: 350px;
+    height: 350px;
+    display: inline-block;
+    padding: 10px;
+    background-color: aqua;
+}
+
+#moveUp{
+    margin-top: -50px;
+}
+
+.titles{
+    font-weight: bold;
+    color: purple;
+}
