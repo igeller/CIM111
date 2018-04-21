@@ -17,14 +17,12 @@ $(document).ready(function(){
         if($(window).width() <= 860 && $(".mobileNav").css("display", "hide")){
             $(".desktopNav").hide();
             $("#navButton").click(function () {
-                $(this).css("background-color", "grey");
                 $(".mobileNav").toggle();
             });
         }else {
             $(".desktopNav").show();
         }
     }//end responsiveMenu
-
 
 
 
