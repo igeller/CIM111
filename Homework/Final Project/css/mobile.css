@@ -1,0 +1,38 @@
+@viewport{
+    width: auto;
+}
+
+/* NAVIGATION PANE */
+.desktopNav{
+    display: block;
+}
+.desktopNav ul li{
+    display: inline-block;
+}
+
+#navButton{
+    background-color: pink;
+    display: none;
+}
+
+
+.fullPage{
+    width: 100%;
+    min-height: 100%;
+    background-color: blue;
+}
+
+#one{
+    background-color: green;
+}
+
+
+@media only screen and (min-width:0px) and (max-width: 860px){
+    #navButton{
+        background-color: pink;
+        display: block;
+    }
+    .desktopNav{
+        display: none;
+    }
+}
