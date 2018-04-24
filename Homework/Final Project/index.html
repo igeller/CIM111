@@ -1,86 +1,161 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Izzy's Portfolio</title>
+<head>
+    <meta charset="utf-8">
+    <title>Izzy's Portfolio</title>
 
 
-        <meta name="author" content="Izzy Geller">
-        <meta name="keywords" content="resume, education, work, skills, coding, schedule, portfolio, code, webdesign">
-        <meta name="description" content="This website is about my experiences and qualifications.">
+    <meta name="author" content="Izzy Geller">
+    <meta name="keywords" content="resume, education, work, skills, coding, schedule, portfolio, code, webdesign">
+    <meta name="description" content="This website is about my experiences and qualifications.">
 
 
-        <!--SCRIPT-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--SCRIPT-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
-        <!--SCROLLMAGIC SCRIPTS-->
-        <script src="js/scrollmagic/js/lib/greensock/TweenMax.min.js"></script>
-        <script src="js/scrollmagic/js/lib/greensock/TimelineMax.min.js"></script>
-        <script src="js/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
-        <script src="js/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
-        <script src="js/scrollmagic/js/lib/greensock/plugins/ScrollToPlugin.min.js"></script>
-        <script src="js/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+    <!--SCROLLMAGIC SCRIPTS-->
+    <script src="js/scrollmagic/js/lib/greensock/TweenMax.min.js"></script>
+    <script src="js/scrollmagic/js/lib/greensock/TimelineMax.min.js"></script>
+    <script src="js/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="js/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <script src="js/scrollmagic/js/lib/greensock/plugins/ScrollToPlugin.min.js"></script>
+    <script src="js/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
 
-        <script type="text/javaScript" src="javaScript/script.js"></script>
+    <script type="text/javaScript" src="javaScript/script.js"></script>
 
-        <!--RESPONSIVE TAGS STYLE-->
-        <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width: 960px)">
-        <link rel="stylesheet" href="css/mobile.css" media="only screen and (min-width: 0px) and (max-width: 960px)">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+    <!--RESPONSIVE TAGS STYLE-->
+    <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width: 960px)">
+    <link rel="stylesheet" href="css/mobile.css" media="only screen and (min-width: 0px) and (max-width: 960px)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    </head>
-    <body>
-        <header>
-            <div id="navButton">menu</div>
-            <nav>
-                <div class="desktopNav">
-                    <ul>
-                        <li>home</li>
-                        <li>about</li>
-                        <li>Education</li>
-                        <li>Experience</li>
-                        <li>skills</li>
-                        <li>projects</li>
-                    </ul>
+
+
+</head>
+<body>
+    <header>
+        <div id="navButton">menu</div>
+        <nav>
+            <div class="desktopNav">
+                <ul>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>Education</li>
+                    <li>Experience</li>
+                    <li>skills</li>
+                    <li>projects</li>
+                </ul>
+            </div>
+
+            <div class="mobileNav">
+                <ul>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>Education</li>
+                    <li>Experience</li>
+                    <li>skills</li>
+                    <li>projects</li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+
+
+
+    <main>
+        <div id="flyingThing">
+
+            <div class="fullPage pinSlides parallaxParent" id="home">
+                <div id="slideContainer">
+                    <section class="panel" id="p1">
+                        <div class="content">
+                            <h1>howdy</h1>
+                            <h4>I'm Izzy Geller</h4>
+                        </div>
+
+                    </section>
+                    <section class="panel" id=p2>
+                        <div class="content">
+                            <p>My name is Izzy Geller. I am a freshman at the University of
+                                Miami where I am majoring in computer science and minoring
+                                in math, communications, and business technology.</p>
+
+                            </div>
+                        </section>
+                    </div>
                 </div>
 
-                <div class="mobileNav">
-                    <ul>
-                        <li>home</li>
-                        <li>about</li>
-                        <li>Education</li>
-                        <li>Experience</li>
-                        <li>skills</li>
-                        <li>projects</li>
-                    </ul>
+                <div class="fullPage parallaxParent" id="exerience">
+                    <div class="content">
+                        <h2 class="sectionName">Work Experience</h2>
+
+                        <div class="sectionContents"><a name="Work"></a>
+
+                                <h4 class="dates">May 15-25, 2017</h4>
+                                <h4 class="titleLocationInfo"><span class="names">Intern </span>|<span class="company">Glowtouch Technologies</span>|<span class="location"><em>Louisville, KY</em></span></h4>
+                                <ul>
+                                    <li>Attained coding skills in HTML and CSS.</li>
+                                    <li>Gained knowledge of website design.</li>
+                                </ul>
+
+                                <h4 class="dates">June 2017 - July 2017</h4>
+                                <div class="additionalExperience"><h4 class="titleLocationInfo" ><span class="names">Camp Counselor </span>|<span class="company">Beber Camp LLC.</span>|<span class="location"><em>Muckwonago, WI</em></span></h4></div>
+                                <ul id="campBullets">
+                                    <li>Gained leadership skills and conflict/ resolution tactics.</li>
+                                    <li>Responsible for the physical and emotional well-being of sixteen campers ages eleven to twelve.</li>
+                                    <li>Led a four-week pottery hobby three times a day for children ages ten to sixteen.</li>
+                                    <li>Developed, coordinated, and directed programs for children ages eight to sixteen.</li>
+                                </ul>
+
+                        </div>
+
+                    </div>
                 </div>
 
-            </nav>
-        </header>
+                <div class="fullPage" id="skills">
+                    <div class="section">
+                        <h2 class="sectionName" id="skillsName">Skills</h2>
+
+                        <div class="sectionContents"><a name="Skills"></a>
+                            <table id="skillsTable">
+                                <tr>
+                                    <th>Coding:</th>
+                                    <th>Other:</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul>
+                                            <li>Fluent in Java, C++, HTML & CSS, and JavaScript/ JQuery</li>
+                                            <li>Proficient in Terminal Environment, Eclipse, Atom, Gedit, GitHub, and Microsoft Visual Studios</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Proficient in Adobe Photoshop, and InDesign</li>
+                                            <li>Proficient in Microsoft Word, Excel, PowerPoint, and Publisher</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="fullPage" id="projects">
+                    <h3>web design</h3>
+                    <h3>Computer Sience</h3>
+                </div>
 
 
-
-
-        <main>
-            <div class="fullPage" id="home">
-                <section class="panel" id="p1">
-                    <h1>howdy</h1>
-                    <h4>I'm Izzy Geller</h4>
-                </section>
-                <section class="panel" id="p2">
-                    <b id="aboutH1">A Little about me...</b>
-                </section>
             </div>
-            <div class="fullPage" id="experience">
-                <p>hey</p>
-            </div>
+
         </main>
 
 
         <footer></footer>
     </body>
-</html>
+    </html>

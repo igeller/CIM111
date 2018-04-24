@@ -5,7 +5,6 @@ $(document).ready(function(){
     var browserWidth = $(window).width();
 
 
-    console.log($(window).resize());
 
     $(".fullPage").height(browserHeight);
 
@@ -25,32 +24,67 @@ $(document).ready(function(){
     }//end responsiveMenu
 
 
-    //swipe panels for the first page
-    var controller = new ScrollMagic.Controller();
-    var swipe = new TimelineMax()
-        .fromTo("section.panel#p2", 1, {x:"100%"}, {x:"-25%", ease: Linear.easeNone});
 
-    var navHeight = $("#navButton").height();
-    new ScrollMagic.Scene({
-        triggerElement: "#home",
-        triggerHook:"onLeave",
-        duration: "1000%",
-        offset: -navHeight
-    }).setPin("#home")
-      .setTween(swipe)
-      .addIndicators({name: "panel slides"})
-      .addTo(controller);
+    var controller = new ScrollMagic.Controller({
+        globalSceneOptions:{
+            triggerHook: .09
+        }
+    });
 
 
 
-     var scene2 =  new ScrollMagic.Scene({
-          triggerElement: "#p2",
-          duration:"100%"
-      }).setPin("#aboutH1")
-        .addIndicators({name: "h1 tag"})
-        .addTo(controller);
 
-      //scroll between first and second PAGE
+
+
+
+
+
+
+
+
+
+
+
+
+    //moving panels
+		// define movement of panels
+		var wipeAnimation = new TimelineMax()
+			// animate to second panel
+			.to("#slideContainer", 0.5, {z: -150})		// move back in 3D space
+			.to("#slideContainer", 1,   {x: "-50%"})	// move in to first panel
+			.to("#slideContainer", 0.5, {z: 0})				// move back to origin in 3D space
+
+		// create scene to pin and link animation
+		new ScrollMagic.Scene({
+				triggerElement: ".pinSlides",
+				triggerHook: "onLeave",
+				duration: "400%"
+			})
+			.setPin(".pinSlides")
+			.setTween(wipeAnimation)
+			.addIndicators({name: "slides"}) // add indicators (requires plugin)
+			.addTo(controller);
+
+
+            //PAGE SWITCH
+            var page = document.querySelectorAll("div.fullPage"); //get all PAGES
+
+                //create a scene for every PAGE
+                for(var i = 0; i<page.length; i++){
+                    new ScrollMagic.Scene({
+                        triggerElement: page[i]
+                    }).setPin(page[i])
+                    .addIndicators({name: "pages"})
+                    .addTo(controller);
+                }
+
+
+
+
+
+
+
+
 
 
 
