@@ -26,6 +26,16 @@ $(document).ready(function(){
 
 
 
+    //menu navigation clickables
+    $(".hmlink").hover(function () {
+        $(".hmlink").css("background-color", "grey" );
+    });
+
+    $(".hmlink").click(function() {
+        window.location = "#homeAnchor";
+
+    });
+
     var controller = new ScrollMagic.Controller({
         globalSceneOptions:{
             triggerHook: .09
@@ -93,6 +103,10 @@ $(document).ready(function(){
     $("#hw5").click(function() {
         window.location = "https://igeller.github.io/CIM111/Homework/JqueryPlugin/index.html";
     });
+
+
+
+
 
 
 

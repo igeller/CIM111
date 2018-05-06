@@ -36,7 +36,7 @@ header{
     padding: 1% 0;
     z-index: 999;
     font-weight: 100;
-    font-size: 1.5em;
+    font-size: 1.3em;
     border-bottom: solid;
 }
 
@@ -70,13 +70,9 @@ nav ul{
 .desktopNav ul li{
     display: inline-block;
     margin-right: 3%;
+    padding: 1%;
 }
 
-.desktop ul li::hover{
-    background: -webkit-linear-gradient(45deg, red, yellow, blue);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 #navButton{
     background-color: pink;
