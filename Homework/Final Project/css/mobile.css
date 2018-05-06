@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i');
+
+
 @viewport{
     width: auto;
     height: auto;
@@ -5,6 +8,7 @@
 
 body{
     margin: 0 auto;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 
 p{
@@ -25,14 +29,21 @@ header{
     position: fixed;
     display: block;
     width: 100%;
+    height: auto;
     top: 0;
+    background-color: white;
     margin: 0 auto;
+    padding: 1% 0;
     z-index: 999;
+    font-weight: 100;
+    font-size: 1.5em;
+    border-bottom: solid;
 }
 
 nav{
     max-width: 100%;
     text-align: center;
+
 }
 
 nav ul{
@@ -43,23 +54,28 @@ nav ul{
 
 
 .desktopNav{
-    background-color: purple;
     display: block;
-    padding: 10px;
-    height: 6%;
+    height: auto;
 }
 
 .desktopNav ul{
-    background-color: orange;
     margin: 0 auto;
     position: sticky;
     right: 0;
-
-
+    float: right;
+    width: 40%;
+    margin-right: 5%
 }
 
 .desktopNav ul li{
     display: inline-block;
+    margin-right: 3%;
+}
+
+.desktop ul li::hover{
+    background: -webkit-linear-gradient(45deg, red, yellow, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #navButton{
@@ -67,6 +83,7 @@ nav ul{
     padding: 10px;
     height: 6%;
     display: none;
+    font-weight: 200;
 }
 
 
@@ -119,8 +136,8 @@ nav ul{
     width: 100%;
     min-height: 100%;
     margin: 0 auto;
-    top: 36.5px !important;
-    left: 0 !important;
+    top: 30.5px !important;
+    left: -5 !important;
 }
 
 .content{

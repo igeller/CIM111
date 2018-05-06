@@ -37,6 +37,7 @@ $(document).ready(function(){
     // define movement of panels
     var wipeAnimation = new TimelineMax()
     // animate to second panel
+    .to("#slideContainer", 0.5, {z: 0})
     .to("#slideContainer", 0.5, {z: -150})		// move back in 3D space
     .to("#slideContainer", 1,   {x: "-50%"})	// move in to first panel
     .to("#slideContainer", 0.5, {z: 0});			// move back to origin in 3D space
