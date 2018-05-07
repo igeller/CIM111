@@ -141,6 +141,7 @@ nav ul{
     top: 30.5px !important;
     left: -5 !important;
     background-color: white;
+    overflow-y: scroll;
 }
 
 .content{
@@ -292,7 +293,7 @@ nav ul{
     background-color: rgb(89, 212, 219);
 }
     #myProjects .content{
-        margin-top: 
+        margin-top:
     }
 #webdesignProjects{
     background-color: pink;
