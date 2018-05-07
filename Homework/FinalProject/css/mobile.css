@@ -151,51 +151,51 @@ nav ul{
     text-align: center;
 }
 
-    #home #p1 .content{
-        margin-top: 15%;
-        background-color: rgb(89, 212, 219);
-        color: white;
-    }
-    #home #p1 .content h1{
-        font-family: 'Cabin Sketch', cursive;
-    }
-    #home #p1 .content h4{
-        font-weight: normal;
-        font-size: 4em;
-    }
+#home #p1 .content{
+    margin-top: 15%;
+    background-color: rgb(89, 212, 219);
+    color: white;
+}
+#home #p1 .content h1{
+    font-family: 'Cabin Sketch', cursive;
+}
+#home #p1 .content h4{
+    font-weight: normal;
+    font-size: 4em;
+}
 
 
 #p2{
     display: block;
     background-color: pink;
 }
-    #p2 .content{
-        position: relative;
-        background-color: pink;
-    }
-    #p2 .content p{
-        display: inline-block;
-        font-size: 2vmax;
-        position: relative;
-        margin-left: 2%;
-        top: 2vh;
-        left: 5vw;
-        padding: 2%;
-        width: 50%;
-        height: 100%;
-    }
-    #meImg{
-        display: inline-block;
-        height: 15%;
-        position: relative;
-        right: 10vw;
-        top: 10vh;
-        margin-left: 10%;
-    }
-    #meImg img{
-        border-radius: 100%;
-        border: solid;
-    }
+#p2 .content{
+    position: relative;
+    background-color: pink;
+}
+#p2 .content p{
+    display: inline-block;
+    font-size: 1em;
+    position: relative;
+    margin-left: 2%;
+    top: 2vh;
+    left: 5vw;
+    padding: 2%;
+    width: 50%;
+    height: 100%;
+}
+#meImg{
+    display: inline-block;
+    height: 15%;
+    position: relative;
+    right: 10vw;
+    top: 10vh;
+    margin-left: 10%;
+}
+#meImg img{
+    border-radius: 100%;
+    border: solid;
+}
 
 
 
@@ -205,35 +205,35 @@ nav ul{
     margin-bottom: 100px;
     background-color: rgb(89, 212, 219);
 }
-    #exSectionContents{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, 48%);
-        grid-column-gap: 2%;
-    }
+#exSectionContents{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 48%);
+    grid-column-gap: 2%;
+}
 
-    .job{
-        background-color: white;
-        color: rgb(247, 192, 103);
-        margin-top: 3%;
-        border-radius: 10px;
-    }
-        .job ul{
-            margin: 3%;
-        }
-        .job ul li{
-            text-align: left;
-        }
-    .titleInfo{
-        padding: 3%;
-        background-color: rgb(247, 192, 103);
-        color:white;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-    }
+.job{
+    background-color: white;
+    color: rgb(247, 192, 103);
+    margin-top: 3%;
+    border-radius: 10px;
+}
+.job ul{
+    margin: 3%;
+}
+.job ul li{
+    text-align: left;
+}
+.titleInfo{
+    padding: 3%;
+    background-color: rgb(247, 192, 103);
+    color:white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
 
-    .jobTitle{
-        text-decoration: underline;
-    }
+.jobTitle{
+    text-decoration: underline;
+}
 
 
 
@@ -242,6 +242,7 @@ nav ul{
     padding-top: 1%;
     background-color: pink;
 }
+
 
 #projects{
     margin-top: 4%;
@@ -287,91 +288,82 @@ nav ul{
 #myProjects{
     background-color: rgb(89, 212, 219);
 }
-    #myProjects .content{
-        margin-top:
-    }
+
 #webdesignProjects{
     background-color: pink;
     overflow-y: scroll;
 }
 
-.content{
-    margin-top: 7%;
-    padding-top: 1%;
+
+#webdesignProjects #gridProjectContent{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    margin-bottom: 5%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 20px;
     padding-bottom: 1%;
+    padding-left: 0px;
 }
 
-    #webdesignProjects #gridProjectContent{
-        margin-top: 5%;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 250px);
-        grid-template-rows: repeat(auto, 300px);
-        grid-column-gap: 5px;
-        grid-row-gap: 5px;
-        margin-bottom: 5%;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 20px;
-        padding-bottom: 1%;
-    }
-    #webdesignProjects.content{
-        margin-right: 2%;
-    }
 
-    .thumbnail{
-        width: 250px;
-        height: 250px;
-        background-color: white;
-        border-radius: 10px;
-    }
-    .thumbnail p{
-        margin-top: 10%;
-        color: rgb(89, 212, 219);
+.thumbnail{
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 10px;
+}
+.thumbnail p{
+    margin-top: 10%;
+    color: rgb(89, 212, 219);
 
-    }
+}
 
-    .thumbnail.active {
-        background-color: grey;
-    }
+.thumbnail.active {
+    background-color: grey;
+}
 
-    .thumbnail .imgHolder{
-        background-color: white;
-        margin: 2% auto;
-        max-width: 95%;
-        height: 70%;
-        border-radius: 10px;
-    }
-        #resumeOrange{
-            background-color: rgb(247, 216, 143);
-        }
-        #upupBeige{
-            background-color: beige;
-        }
+.thumbnail .imgHolder{
+    background-color: white;
+    margin: 2% auto;
+    max-width: 95%;
+    height: 70%;
+    border-radius: 10px;
+}
+#resumeOrange{
+    background-color: rgb(247, 216, 143);
+}
+#upupBeige{
+    background-color: beige;
+}
 
-        .thumbnail img{
-            max-width: 100%;
-            max-height: 70%;
-            align-items: center;
-        }
-            #noCssResume{
-                margin-top: 15%;
-                max-height: 50%;
-            }
-            #cssResume{
-                margin-top: 15%;
-                max-height: 50%;
-            }
-            #upup{
-                margin-top: 15%;
-                max-height: 50%;
-            }
-            #howTo{
-                margin-top: 27%;
-                max-height: 20%;
-            }
-            #plugin{
-                border-radius: 10px;
-                max-height: 100%;
-            }
+.thumbnail img{
+    max-width: 100%;
+    max-height: 70%;
+    align-items: center;
+}
+#noCssResume{
+    margin-top: 15%;
+    max-height: 50%;
+}
+#cssResume{
+    margin-top: 15%;
+    max-height: 50%;
+}
+#upup{
+    margin-top: 15%;
+    max-height: 50%;
+}
+#howTo{
+    margin-top: 27%;
+    max-height: 20%;
+}
+#plugin{
+    border-radius: 10px;
+    max-height: 100%;
+}
 
 
 
@@ -388,9 +380,59 @@ nav ul{
 
 
 
-@media only screen and (min-width: 0px) and (max-width: 700px){
+@media only screen and (min-width:0px) and (max-width: 260px){
+    #webdesignProjects #gridProjectContent{
+        padding-left: 0px;
+    }
+    #webdesignProjects .content{
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width:260px) and (max-width: 300px){
+    #webdesignProjects #gridProjectContent{
+        padding-left: 1%;
+    }
+}
+
+
+@media only screen and (min-width:300px) and (max-width: 380px){
+    #webdesignProjects #gridProjectContent{
+        padding-left: 5%;
+    }
+}
+
+
+@media only screen and (min-width:380px) and (max-width: 400px){
+    #webdesignProjects #gridProjectContent{
+        padding-left: 15%;
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:540px){
+    #webdesignProjects #gridProjectContent{
+        padding-left: 20%;
+    }
+}
+
+
+@media only screen and (min-width:0px) and (max-width:540px){
     #greeting{
-        font-size: 7em;
+        font-size: 6em;
+    }
+    #aboutParagraph{
+        font-size: 3em;
+    }
+
+
+
+}
+
+
+
+@media only screen and (min-width:0px) and (max-width: 700px){
+    #greeting{
+        font-size: 6em;
     }
 
     #p2 .content p{
@@ -402,22 +444,14 @@ nav ul{
         right: 5vw;
     }
 
-}
-
-@media only screen and (min-width:960px) and (max-width: 1159px){
-    .desktopNav ul{
-        width: 50%;
+    #exSectionContents{
+        grid-template-columns: 100%;
+        grid-column-gap: 0;
     }
+
 }
 
-@media only screen and (min-width:860px) and (max-width: 960px){
-    .desktopNav ul{
-        width: 60%;
-    }
-}
-
-
-@media only screen and (min-width:0px) and (max-width: 860px){
+@media only screen and (min-width:0px) and (max-width:860px){
     #navButton{
         background-color: pink;
         display: block;
@@ -435,10 +469,8 @@ nav ul{
     }
 }
 
-@media only screen and (min-width:0px) and (max-width: 700px){
-    #exSectionContents{
-        grid-template-columns: 1fr;
-        grid-column-gap: 0;
+@media only screen and (min-width:860px) and (max-width:960px){
+    .desktopNav ul{
+        width: 60%;
     }
-
 }

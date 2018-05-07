@@ -73,7 +73,7 @@ if($("#p2").show()){
     .to("#slideContainer", 0.5, {z: 0});			// move back to origin in 3D space
 
     // create scene to pin and link animation
-    new ScrollMagic.Scene({
+    var testscene = new ScrollMagic.Scene({
         triggerElement: ".pinSlides",
         triggerHook: "onLeave",
         duration: "400%"
@@ -97,6 +97,17 @@ if($("#p2").show()){
                 .addTo(controller);
 
     }//end for loop
+
+    // testscene.on("hello", callback);
+    //
+    // function callback(event){
+    //     console.log(event.type);
+    // }
+
+    console.log(forScene);
+
+    // var triggerPos = forScene.triggerPosition();
+    // console.log(triggerPos);
 
     //updates the size and makes width responsive
     $(window).resize(function () {
