@@ -146,15 +146,11 @@ nav ul{
 
 .content{
     margin-top: 10%;
-    margin-bottom: 50%;
     margin-left: 5%;
     margin-right: 3%;
     text-align: center;
 }
 
-#home{
-    margin-bottom: 50%;
-}
     #home #p1 .content{
         margin-top: 15%;
         background-color: rgb(89, 212, 219);
@@ -171,7 +167,6 @@ nav ul{
 
 #p2{
     display: block;
-    margin-bottom: 500px;
     background-color: pink;
 }
     #p2 .content{
@@ -438,4 +433,12 @@ nav ul{
     .mobileNav ul{
         margin: 0 auto !important;
     }
+}
+
+@media only screen and (min-width:0px) and (max-width: 700px){
+    #exSectionContents{
+        grid-template-columns: 1fr;
+        grid-column-gap: 0;
+    }
+
 }
