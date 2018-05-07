@@ -14,6 +14,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
+
+    <!--SCROLLTO SCRIPT-->
+    <script src="js/scrollTo/jquery.scrollTo.min.js"></script>
+
+    <!--LETTERING SCRIPT-->
+    <script src="js/textillate/assets/jquery.lettering.js"></script>
+
+    <!--FIT TEXT-->
+    <script src="js/textillate/assets/jquery.fittext.js"></script>
+
+
+    <!--TEXTILLATE-->
+    <script src="js/textillate/jquery.textillate.js"></script>
+
     <!--SCROLLMAGIC SCRIPTS-->
     <script src="js/scrollmagic/js/lib/greensock/TweenMax.min.js"></script>
     <script src="js/scrollmagic/js/lib/greensock/TimelineMax.min.js"></script>
@@ -22,13 +36,19 @@
     <script src="js/scrollmagic/js/lib/greensock/plugins/ScrollToPlugin.min.js"></script>
     <script src="js/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
 
+
+
+
     <script type="text/javaScript" src="javaScript/script.js"></script>
+
 
     <!--RESPONSIVE TAGS STYLE-->
     <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width: 960px)">
     <link rel="stylesheet" href="css/mobile.css" media="only screen and (min-width: 0px) and (max-width: 960px)">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--ANIMATE.CSS-->
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 
 
 
@@ -40,7 +60,6 @@
             <div class="desktopNav">
                 <ul>
                     <li class="hmlink">home</li>
-                    <li class="ablink">about</li>
                     <li class="edlink">education</li>
                     <li class="exlink">experience</li>
                     <li class="sklink">skills</li>
@@ -51,7 +70,6 @@
             <div class="mobileNav">
                 <ul>
                     <li class="hmlink">home</li>
-                    <li class="ablink">about</li>
                     <li class="edlink">education</li>
                     <li class="exlink">experience</li>
                     <li class="sklink">skills</li>
@@ -68,16 +86,16 @@
     <main>
         <div id="flyingThing">
 
-            <div class="fullPage pinSlides" id="home" <a id="homeAnchor"</a>>
+            <div class="fullPage pinSlides" id="home">
                 <div id="slideContainer">
                     <section class="panel" id="p1">
                         <div class="content">
-                            <h1>howdy</h1>
-                            <h4>I'm Izzy Geller</h4>
+                            <h1 id="greeting">howdy</h1>
+                            <h4 class="word_split">I'm Izzy Geller</h4>
                         </div>
 
                     </section>
-                    <section class="panel" id=p2>
+                    <section class="panel" id="p2">
                         <div class="content">
                             <p>My name is Izzy Geller. I am a freshman at the University of
                                 Miami where I am majoring in computer science and minoring
@@ -88,11 +106,11 @@
                     </div>
                 </div>
 
-                <div class="fullPage" id="exerience">
+                <div class="fullPage" id="experience">
                     <div class="content">
                         <h2 class="sectionName">Work Experience</h2>
 
-                        <div class="sectionContents"><a name="Work"></a>
+                        <div class="sectionContents">
 
                             <h4 class="dates">May 15-25, 2017</h4>
                             <h4 class="titleLocationInfo"><span class="names">Intern </span>|<span class="company">Glowtouch Technologies</span>|<span class="location"><em>Louisville, KY</em></span></h4>
@@ -115,11 +133,11 @@
                     </div>
                 </div>
 
-                <div class="fullPage" id="skills">
+                <div class="fullPage" id="skills"><a name="skills"></a>
                     <div class="section">
                         <h2 class="sectionName" id="skillsName">Skills</h2>
 
-                        <div class="sectionContents"><a name="Skills"></a>
+                        <div class="sectionContents">
                             <table id="skillsTable">
                                 <tr>
                                     <th>Coding:</th>
@@ -147,7 +165,7 @@
 
                 <div class="fullPage pinProjectSlides" id="projects">
                     <div id="projects100">
-                        <div id="myProjectSlideContainer" onLoad="projects.scroll("-100%", 0)">
+                        <div id="myProjectSlideContainer">
                             <section class="panelProjects" id=webdesignProjects>
                                 <div class="content">
                                     <div id="gridProjectContent">

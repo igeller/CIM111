@@ -6,6 +6,11 @@
     height: auto;
 }
 
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
 body{
     margin: 0 auto;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -116,7 +121,7 @@ nav ul{
 }
 
 #p2{
-    background-color: aqua;
+    background-color: brown;
     left: 0;
     right: 0;
 }
@@ -134,6 +139,7 @@ nav ul{
     margin: 0 auto;
     top: 30.5px !important;
     left: -5 !important;
+    background-color: white;
 }
 
 .content{
@@ -155,7 +161,7 @@ nav ul{
     margin-bottom: 500px;
 }
 
-#exerience{
+#experience{
     margin-top: 4%;
     padding-top: 1%;
     margin-bottom: 100px;
@@ -165,7 +171,6 @@ nav ul{
 
 #skills{
     margin-top: 4%;
-
 }
 
 #projects{
@@ -213,6 +218,7 @@ nav ul{
 }
 #webdesignProjects{
     background-color: pink;
+    overflow-y: scroll;
 }
 
 .content{
@@ -293,8 +299,10 @@ nav ul{
 }
 
 
-
-
+/**************LETTIERING JS STUFF****************/
+#greeting{
+    font-size: 10em;
+}
 
 
 
