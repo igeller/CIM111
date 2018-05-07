@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i');
-
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch:700');
 
 @viewport{
     width: auto;
@@ -14,6 +14,7 @@ html, body{
 body{
     margin: 0 auto;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
+    color: white;
 }
 
 p{
@@ -36,13 +37,13 @@ header{
     width: 100%;
     height: auto;
     top: 0;
-    background-color: white;
     margin: 0 auto;
     padding: 1% 0;
     z-index: 999;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 1.3em;
     border-bottom: solid;
+    background-color: pink;
 }
 
 nav{
@@ -116,7 +117,7 @@ nav ul{
 }
 
 #p1{
-    background-color: green;
+    background-color: rgb(89, 212, 219);
     margin-left:0;
 }
 
@@ -143,10 +144,9 @@ nav ul{
 }
 
 .content{
-    background-color: brown;
     margin-top: 10%;
     margin-bottom: 50%;
-    margin-left: 3%;
+    margin-left: 5%;
     margin-right: 3%;
     text-align: center;
 }
@@ -154,23 +154,97 @@ nav ul{
 #home{
     margin-bottom: 50%;
 }
+    #home #p1 .content{
+        margin-top: 15%;
+        background-color: rgb(89, 212, 219);
+        color: white;
+    }
+    #home #p1 .content h1{
+        font-family: 'Cabin Sketch', cursive;
+    }
+    #home #p1 .content h4{
+        font-weight: normal;
+        font-size: 4em;
+    }
 
 
 #p2{
     display: block;
     margin-bottom: 500px;
+    background-color: pink;
 }
+    #p2 .content{
+        position: relative;
+        background-color: pink;
+    }
+    #p2 .content p{
+        display: inline-block;
+        font-size: 2vmax;
+        position: relative;
+        margin-left: 2%;
+        top: 2vh;
+        left: 5vw;
+        padding: 2%;
+        width: 50%;
+        height: 100%;
+    }
+    #meImg{
+        display: inline-block;
+        height: 15%;
+        position: relative;
+        right: 10vw;
+        top: 10vh;
+        margin-left: 10%;
+    }
+    #meImg img{
+        border-radius: 100%;
+        border: solid;
+    }
+
+
 
 #experience{
     margin-top: 4%;
     padding-top: 1%;
     margin-bottom: 100px;
+    background-color: rgb(89, 212, 219);
 }
+    #exSectionContents{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 48%);
+        grid-column-gap: 2%;
+    }
+
+    .job{
+        background-color: white;
+        color: rgb(247, 192, 103);
+        margin-top: 3%;
+        border-radius: 10px;
+    }
+        .job ul{
+            margin: 3%;
+        }
+        .job ul li{
+            text-align: left;
+        }
+    .titleInfo{
+        padding: 3%;
+        background-color: rgb(247, 192, 103);
+        color:white;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .jobTitle{
+        text-decoration: underline;
+    }
 
 
 
 #skills{
     margin-top: 4%;
+    padding-top: 1%;
+    background-color: pink;
 }
 
 #projects{
@@ -178,6 +252,7 @@ nav ul{
     white-space: nowrap;
     overflow: auto;
     overflow-y: hidden;
+    background-color: rgb(89, 212, 219);
 }
 
 
@@ -214,8 +289,11 @@ nav ul{
 
 
 #myProjects{
-    background-color: white;
+    background-color: rgb(89, 212, 219);
 }
+    #myProjects .content{
+        margin-top: 
+    }
 #webdesignProjects{
     background-color: pink;
     overflow-y: scroll;
@@ -228,7 +306,6 @@ nav ul{
 }
 
     #webdesignProjects #gridProjectContent{
-        margin-left: 3%;
         margin-top: 5%;
         display: grid;
         grid-template-columns: repeat(auto-fill, 250px);
@@ -240,13 +317,22 @@ nav ul{
         border-bottom-right-radius: 20px;
         padding-bottom: 1%;
     }
+    #webdesignProjects.content{
+        margin-right: 2%;
+    }
 
     .thumbnail{
         width: 250px;
-        height: 300px;
+        height: 250px;
         background-color: white;
         border-radius: 10px;
     }
+    .thumbnail p{
+        margin-top: 10%;
+        color: rgb(89, 212, 219);
+
+    }
+
     .thumbnail.active {
         background-color: grey;
     }
@@ -295,16 +381,44 @@ nav ul{
 
 
 #compSciProjects{
-    background-color:red;
+    background-color:pink;
 }
 
 
 /**************LETTIERING JS STUFF****************/
 #greeting{
-    font-size: 10em;
+    font-size: 8em;
 }
 
 
+
+@media only screen and (min-width: 0px) and (max-width: 700px){
+    #greeting{
+        font-size: 7em;
+    }
+
+    #p2 .content p{
+        top: 10vh;
+        margin: 0 auto;
+        margin-left: -10%;
+    }
+    #meImg{
+        right: 5vw;
+    }
+
+}
+
+@media only screen and (min-width:960px) and (max-width: 1159px){
+    .desktopNav ul{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width:860px) and (max-width: 960px){
+    .desktopNav ul{
+        width: 60%;
+    }
+}
 
 
 @media only screen and (min-width:0px) and (max-width: 860px){
@@ -317,7 +431,7 @@ nav ul{
     }
     .mobileNav{
         width: 100%;
-        background-color: yellow;
+        background-color: rgb(172, 137, 193);
     }
 
     .mobileNav ul{

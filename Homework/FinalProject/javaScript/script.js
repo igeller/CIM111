@@ -8,6 +8,7 @@ $(document).ready(function(){
     var browserWidth = $(window).width();
 
     $(".fullPage").height(browserHeight);
+    $("header", "nav").css("background-color", $("#home").css("background-color"));
 
     $(window).resize(menu);
 
@@ -37,41 +38,27 @@ $(document).ready(function(){
 
 
 /*LETTERING STUFF*/
-$(function () {
-    $("#greeting").textillate({
-        in:{effect: 'swing'},
-        out:{effect: 'swing'},
-        loop: true,
-        minDisplayTime: 1000,
-        type: "char"
-    });
+$("#greeting").textillate({
+    in:{effect: 'swing'},
+    out:{effect: 'swing'},
+    loop: true,
+    minDisplayTime: 1000,
+    type: "word"
 });
 
+$("#intro").textillate({
+    in:{effect: 'fadeIn'},
+    minDisplayTime: 1000,
+    type:"char"
+});
 
-
-
-    //if($("#projects").scroll().scrollWidth() < ($("#projects").scroll().scrollWidth())/3)
-    $('body').on('scroll', function(event) { mouseHandle(event); });
-
-
-
-
-
-
-
-    //
-    // var scrollWidth = $("#projects").scrollLeft();
-    // console.log(scrollWidth);
-    // var currentPos = $("#projects").scroll().offsetWidth;
-    // if(currentPos < scrollWidth/3){
-    //     $("#projects").scrollTo("#webdesignProjects");
-    // }else if (currentPos > (scrollWidth/3) *2) {
-    //     $("#projects").scrollTo("#compSciProjects");
-    // }else {
-    //     console.log("hey");
-    //     $("#projects").scrollTo("#myProjects");
-    // }
-
+if($("#p2").show()){
+    $("#aboutParagraph").textillate({
+        in:{effect: 'wobble'},
+        minDisplayTime: 100,
+        type:"word"
+    });
+}
 
 
 
@@ -173,10 +160,10 @@ function navScroll(navItem, location){
 
 function navHover(item){
     $(item).mouseover(function () {
-        $(item).css("background-color", "grey" );
+        $(item).css("text-decoration", "underline" );
     });
     $(item).mouseleave(function () {
-        $(item).css("background-color", "white" );
+        $(item).css("text-decoration", "none" );
     });
 }//end nav Hover
 

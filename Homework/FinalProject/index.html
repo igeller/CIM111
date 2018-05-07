@@ -90,16 +90,17 @@
                 <div id="slideContainer">
                     <section class="panel" id="p1">
                         <div class="content">
-                            <h1 id="greeting">howdy</h1>
-                            <h4 class="word_split">I'm Izzy Geller</h4>
+                            <h1 id="greeting">howdy!</h1>
+                            <h4 id="intro">I'm Izzy Geller</h4>
                         </div>
 
                     </section>
                     <section class="panel" id="p2">
                         <div class="content">
-                            <p>My name is Izzy Geller. I am a freshman at the University of
-                                Miami where I am majoring in computer science and minoring
-                                in math, communications, and business technology.</p>
+                            <div id="meImg">
+                                <img src="images/me.JPG" alt="">
+                            </div>
+                            <p id="aboutParagraph">My name is Izzy Geller. I am a freshman at the University of Miami where I am majoring in computer science and minoring in math, communications, and business technology.</p>
 
                             </div>
                         </section>
@@ -110,31 +111,41 @@
                     <div class="content">
                         <h2 class="sectionName">Work Experience</h2>
 
-                        <div class="sectionContents">
+                        <div id="exSectionContents">
+                            <div class="job">
+                                <div class="titleInfo">
+                                    <h4 class="jobTitle">Webdesign Intern</h4>
+                                    <h4>Glowtouch Technologies | Louisville, KY</h4>
+                                    <h4 class="dates">May 15-25, 2017</h4>
+                                </div>
+                                <ul>
+                                    <li>Attained coding skills in HTML and CSS.</li>
+                                    <li>Gained knowledge of website design.</li>
+                                </ul>
+                            </div>
 
-                            <h4 class="dates">May 15-25, 2017</h4>
-                            <h4 class="titleLocationInfo"><span class="names">Intern </span>|<span class="company">Glowtouch Technologies</span>|<span class="location"><em>Louisville, KY</em></span></h4>
-                            <ul>
-                                <li>Attained coding skills in HTML and CSS.</li>
-                                <li>Gained knowledge of website design.</li>
-                            </ul>
+                            <div class="job">
+                                <div class="titleInfo">
+                                    <h4 class="jobTitle">Camp Counselor</h4>
+                                    <h4>Beber Camp LLC. | Muckwonago, WI</h4>
+                                    <h4 class="dates">June 2017 - July 2017</h4>
+                                </div>
 
-                            <h4 class="dates">June 2017 - July 2017</h4>
-                            <div class="additionalExperience"><h4 class="titleLocationInfo" ><span class="names">Camp Counselor </span>|<span class="company">Beber Camp LLC.</span>|<span class="location"><em>Muckwonago, WI</em></span></h4></div>
-                            <ul id="campBullets">
-                                <li>Gained leadership skills and conflict/ resolution tactics.</li>
-                                <li>Responsible for the physical and emotional well-being of sixteen campers ages eleven to twelve.</li>
-                                <li>Led a four-week pottery hobby three times a day for children ages ten to sixteen.</li>
-                                <li>Developed, coordinated, and directed programs for children ages eight to sixteen.</li>
-                            </ul>
+                                <ul id="campBullets">
+                                    <li>Gained leadership skills and conflict/ resolution tactics.</li>
+                                    <li>Responsible for the physical and emotional well-being of sixteen campers ages eleven to twelve.</li>
+                                    <li>Led a four-week pottery hobby three times a day for children ages ten to sixteen.</li>
+                                    <li>Developed, coordinated, and directed programs for children ages eight to sixteen.</li>
+                                </ul>
+                            </div>
 
                         </div>
 
                     </div>
                 </div>
 
-                <div class="fullPage" id="skills"><a name="skills"></a>
-                    <div class="section">
+                <div class="fullPage" id="skills">
+                    <div class="content">
                         <h2 class="sectionName" id="skillsName">Skills</h2>
 
                         <div class="sectionContents">
@@ -168,41 +179,42 @@
                         <div id="myProjectSlideContainer">
                             <section class="panelProjects" id=webdesignProjects>
                                 <div class="content">
+                                    <h2>Webdesign Projects</h2>
                                     <div id="gridProjectContent">
 
                                         <div class="thumbnail" id="hw1">
                                             <div class="imgHolder">
                                                 <img id="noCssResume" src="images/noCssResume.png" alt="">
                                             </div>
-                                            <p>descreptions of website</p>
+                                            <p>My First Website</p>
                                         </div>
 
                                         <div class="thumbnail" id="hw2">
                                             <div class="imgHolder" id="resumeOrange">
                                                 <img id="cssResume" src="images/cssResume.png" alt="">
                                             </div>
-                                            <p>descreptions of website</p>
+                                            <p>Website & Basic CSS</p>
                                         </div>
 
                                         <div class="thumbnail" id="hw3">
                                             <div class="imgHolder" id="upupBeige">
                                                 <img id="upup" src="images/responsiveUPUP.png" alt="">
                                             </div>
-                                            <p>description</p>
+                                            <p>CSS Responsive Website</p>
                                         </div>
 
                                         <div class="thumbnail" id="hw4">
                                             <div class="imgHolder">
                                                 <img id="howTo" src="images/jqueryHow.png" alt="">
                                             </div>
-                                            <p>description</p>
+                                            <p>First Try at Jquery</p>
                                         </div>
 
                                         <div class="thumbnail" id="hw5">
                                             <div class="imgHolder">
                                                 <img id="plugin" src="images/jqueryPlugin.png" alt="">
                                             </div>
-                                            <p>description</p>
+                                            <p>A Site with a Jquery Plugin</p>
                                         </div>
                                     </div>
 
