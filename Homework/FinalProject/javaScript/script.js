@@ -63,6 +63,44 @@ if($("#p2").show()){
 
 
 
+
+$("#githubLink").mouseover(function () {
+    $("#githubLink p").css("color", "rgb(121, 229, 173)");
+});
+$("#githubLink").mouseleave(function () {
+    $("#githubLink p").css("color", "white");
+});
+$("#githubLink").click(function () {
+    window.location = "https://github.com/igeller";
+});
+
+
+//hands on myproject section
+handsHover("#CS");         handsHover("#WD")
+
+handsHoverBlue("#compToMain");      handsHoverBlue("#webToMain");
+
+
+$("#CS").click(function () {
+    $("#projects").scrollTo($("#compSciProjects"));
+})
+$("#compToMain").click(function () {
+    $("#projects").scrollTo($("#myProjects"));
+})
+
+$("#WD").click(function () {
+    $("#projects").scrollTo($("#webdesignProjects"));
+})
+$("#webToMain").click(function () {
+    $("#projects").scrollTo($("#myProjects"));
+})
+
+
+
+
+
+
+
     //moving panels
     // define movement of panels
     var wipeAnimation = new TimelineMax()
@@ -177,6 +215,27 @@ function navHover(item){
         $(item).css("text-decoration", "none" );
     });
 }//end nav Hover
+
+
+
+function handsHover(item){
+    $(item).mouseover(function(){
+        $(item).css("color", "rgb(247, 192, 103)");
+    });
+    $(item).mouseleave(function(){
+        $(item).css("color", "white");
+    });
+}
+
+
+function handsHoverBlue(item){
+    $(item).mouseover(function(){
+        $(item).css("color", "rgb(89, 212, 219)");
+    });
+    $(item).mouseleave(function(){
+        $(item).css("color", "white");
+    });
+}
 
 
 });//end of code

@@ -243,6 +243,13 @@ nav ul{
     background-color: pink;
 }
 
+#skillsSectionContents{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 48%);
+    grid-column-gap: 1%;
+    padding-bottom: 5%
+}
+
 
 #projects{
     margin-top: 4%;
@@ -251,6 +258,12 @@ nav ul{
     overflow-y: hidden;
     background-color: rgb(89, 212, 219);
 }
+
+.item{
+    padding-top: .5%;
+    padding-bottom: .5%;
+}
+
 
 
 
@@ -287,6 +300,54 @@ nav ul{
 
 #myProjects{
     background-color: rgb(89, 212, 219);
+}
+
+#githubLink{
+    background-color: rgb(172, 137, 193);
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 3%;
+    font-size: 30px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 100px;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-delay: 10s;
+}
+#githubLink p{
+    width: 100%;
+    margin: 1%;
+}
+
+.rghtCS{
+    display: inline-block;
+    position: relative;
+    right: -20vw;
+}
+
+.lftWD{
+    display: inline-block;
+    position: relative;
+    left: -20vw;
+}
+
+.lftWD h4{
+    position: relative;
+    top:-5px;
+    display: inline-block;
+}
+.rghtCS h4{
+    position: relative;
+    top: -5px;
+    display: inline-block;
+}
+
+#compToMain{
+    left: -30vw;
+}
+
+#webToMain{
+    right: -30vw;
 }
 
 #webdesignProjects{
@@ -379,6 +440,12 @@ nav ul{
 }
 
 
+@media only screen and (min-width:0px) and (max-width:780px) {
+    #githubLink{
+        font-size: 25px;
+    }
+}
+
 
 @media only screen and (min-width:0px) and (max-width: 260px){
     #webdesignProjects #gridProjectContent{
@@ -424,10 +491,7 @@ nav ul{
         font-size: 3em;
     }
 
-
-
 }
-
 
 
 @media only screen and (min-width:0px) and (max-width: 700px){
@@ -446,10 +510,14 @@ nav ul{
 
     #exSectionContents{
         grid-template-columns: 100%;
-        grid-column-gap: 0;
     }
 
+    #skillsSectionContents{
+        grid-template-columns: repeat(auto-fit, 100%);
+    }
 }
+
+
 
 @media only screen and (min-width:0px) and (max-width:860px){
     #navButton{
