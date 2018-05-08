@@ -178,6 +178,19 @@ $("#webToMain").click(function () {
         window.location = "https://igeller.github.io/CIM111/Homework/JqueryPlugin/index.html";
     });
 
+    $("#CS1").click(function() {
+        window.location = "https://github.com/igeller/APComputerScience";
+    });
+    $("#CS2").click(function() {
+        window.location = "https://github.com/igeller/CSC120";
+    });
+    $("#CS3").click(function() {
+        window.location = "https://github.com/igeller/CSC220";
+    });
+    $("#CS4").click(function() {
+        window.location = "https://github.com/igeller/ECE218";
+    });
+
 
 
 

@@ -69,7 +69,7 @@ nav ul{
     position: sticky;
     right: 0;
     float: right;
-    width: 40%;
+    width: 30%;
     margin-right: 5%
 }
 
@@ -241,13 +241,20 @@ nav ul{
     margin-top: 4%;
     padding-top: 1%;
     background-color: pink;
+    overflow-y: scroll;
+
+}
+
+.fullPage #skills{
+    overflow-y: scroll;
 }
 
 #skillsSectionContents{
     display: grid;
     grid-template-columns: repeat(auto-fill, 48%);
     grid-column-gap: 1%;
-    padding-bottom: 5%
+    padding-bottom: 5%;
+    overflow-y: scroll;
 }
 
 
@@ -300,6 +307,7 @@ nav ul{
 
 #myProjects{
     background-color: rgb(89, 212, 219);
+    overflow-y: scroll;
 }
 
 #githubLink{
@@ -343,11 +351,11 @@ nav ul{
 }
 
 #compToMain{
-    left: -30vw;
+    left: 1vw;
 }
 
 #webToMain{
-    right: -30vw;
+    right: 1vw;
 }
 
 #webdesignProjects{
@@ -356,7 +364,7 @@ nav ul{
 }
 
 
-#webdesignProjects #gridProjectContent{
+.gridProjectContent{
     margin-top: 5%;
     display: grid;
     grid-template-columns: repeat(auto-fit, 250px);
@@ -431,6 +439,11 @@ nav ul{
 
 #compSciProjects{
     background-color:pink;
+    overflow-y: scroll;
+}
+
+#compSciProjects .imgHolder img{
+    margin-top: 15%;
 }
 
 
@@ -515,6 +528,14 @@ nav ul{
     #skillsSectionContents{
         grid-template-columns: repeat(auto-fit, 100%);
     }
+
+    #WD{
+        left: 15vw;
+    }
+    #CS{
+        top: 8vh;
+        right: 30vw;
+    }
 }
 
 
@@ -539,6 +560,6 @@ nav ul{
 
 @media only screen and (min-width:860px) and (max-width:960px){
     .desktopNav ul{
-        width: 60%;
+        width: 40%;
     }
 }
